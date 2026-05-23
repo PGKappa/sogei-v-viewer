@@ -1,0 +1,19 @@
+.performance {
+	/*
+	.main-table-column-title {
+		background-color: rgba(47, 97, 136, 0.85)!important;
+	}*/
+
+	.performance-inner-container {
+		color: $COLOR__MAIN_TABLE_PERFORMANCE_PERCENTAGE;
+		.performance-container {
+			background-color: $COLOR__MAIN_TABLE_PERFORMANCE_PERCENTAGE_BAR;
+			background-image: linear-gradient(to right, $COLOR__MAIN_TABLE_PERFORMANCE_PERCENTAGE_BAR_DARKER, $COLOR__MAIN_TABLE_PERFORMANCE_PERCENTAGE_BAR);
+
+			.performance-cover {
+				background-color: $COLOR__MAIN_TABLE_PERFORMANCE_PERCENTAGE_BAR_CONTAINER;				
+
+			}
+		}
+	}
+}

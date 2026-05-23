@@ -1,0 +1,19 @@
+.gui-mode-dark {
+	.last-events-table {
+		.content {
+			color: $COLOR__DARK__TABLE_ROW_TEXT;
+			.column {
+				border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+				.row {
+					&:nth-child(odd) {
+						background-color: $COLOR__DARK__TABLE_ROW_ODD;
+					}
+	
+					&:nth-child(even) {
+						background-color: $COLOR__DARK__TABLE_ROW_EVEN;
+					}
+				}
+			}
+		}
+	}
+}

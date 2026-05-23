@@ -1,0 +1,31 @@
+include: 
+  - '.gitlab/ci/auto-mr.yml'
+  - '.gitlab/ci/dependencies.yml'
+  - '.gitlab/ci/test.yml'
+  - '.gitlab/ci/pg/compile.yml'
+  - '.gitlab/ci/pg/build-images.yml'
+  - '.gitlab/ci/sportradar/compile.yml'
+  - '.gitlab/ci/sportradar/build-images.yml'
+  - '.gitlab/ci/stanleybet/compile.yml'
+  - '.gitlab/ci/stanleybet/build-images.yml'
+  - '.gitlab/ci/net4media/compile.yml'
+  - '.gitlab/ci/net4media/build-images.yml'
+
+stages:
+  - install-dependencies
+  - test
+  - compile
+  - build-docker
+  - auto-mr
+
+#Deployment_-_PGVirtual_-_V-Viewer:
+#  stage: deployment
+#  only:
+#    - staging
+#  trigger:
+#    project:       pgvirtual/deployments/frontend/main
+#    branch:        master
+#    strategy:      depend
+  # rules:
+  #   - if: $CI_COMMIT_BRANCH == "staging"
+

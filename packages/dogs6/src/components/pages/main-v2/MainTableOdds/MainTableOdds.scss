@@ -1,0 +1,172 @@
+.main-table-odds-v2 {
+	width: 100%;
+	//min-height: 30%;
+	display: flex;
+	font-weight: bold;
+
+	.main-table-column-v2 {
+		width: 100%;
+		//height: 100%;
+		flex-direction: column;
+		display: flex;
+		flex: 1;
+		
+		
+
+
+		.titlebar {
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.content {
+			width: 100%;
+			//height: 100%;
+			height: 50px;
+			display: flex;
+			flex-direction: row;
+			border-left-style: solid;
+		
+			/*
+			border-right-width: 1px;
+			border-right-style: solid;
+			border-left-width: 1px;
+			border-left-style: solid;
+			*/
+			border-style: none;
+
+			.row {
+				width: 100% !important;
+				height: 100% !important;
+				padding: 0 5%;
+				display: flex;
+				align-items: center;
+				flex: 1;
+				font-size: 2.037037037037037vh;
+				border-left-style: solid;
+				border-right-style: solid;
+				border-left-width: .5px;
+				border-right-width: .5px;
+
+				background-color: hsla(0, 0%, 90%, 0.85); // !important;
+				&:first-of-type {
+						border-left-width: 0;
+				}
+		
+				&:last-of-type {
+					border-right-width: 0;			
+				}
+				//line-height: 2.037037037037037vh;								
+
+				.odds {
+					display: flex;
+					justify-content: center;
+					font-size: 2.037037037037037vh;
+					font-size: 2.5925925925925926vh;
+					//line-height: 2.037037037037037vh;
+				}
+
+				.div {
+					margin: 0;
+				}
+
+
+				.main-table-odds-entry {
+					padding: 0 2.685185185185185vh;
+					display: inherit;
+					justify-content: space-between;
+					width: 100%;
+
+
+					.left-item {
+						justify-content: start;						
+						align-items: center;
+						display: flex;
+					}
+				}
+			}
+		}
+
+		.main-table-internal-column {
+			position: absolute;
+			min-width: 100%;
+			max-width: 100%;
+			left: 0;
+		}
+
+		.div-that-needs-a-className {
+			position: relative;
+			width: 100%;
+			height: 100% !important;
+			grid-row-start: 1;
+			grid-row-end: 8;
+			overflow: hidden;
+
+			.main-table-internal-column {
+				width: 100%;
+				height: 100%;
+				display: grid;
+				grid-template-rows: repeat(7, 1fr);
+			}
+		}
+	}
+	
+	
+	.racer-wrapper {
+
+		width: 3.0555555555555554vh;
+		height: 3.0555555555555554vh;
+		margin-left: 2.685185185185185vh;
+		//margin-right: 2.5vh;
+		margin-right: 3vh;
+		margin-left: 0px;
+
+		.racer {
+			line-height: 1.9vh;
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.main {
+		width: 100%;
+
+		.wrapper {
+			width: 100%;
+
+			.right {
+				min-width: 22.2%;
+			}
+		}
+	}
+
+	.main-table-column-title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 633px) {
+	.table-main-odds {
+		.main-table-column {
+			.main-table-column-title {
+				//font-size: 2.5925925925925926vh;
+			}
+
+			.content {
+				.row {
+					font-size: 2.4074074074074074vh;
+
+					&.odds {
+						font-size: 2.5925925925925926vh;
+					}
+				}
+			}
+
+		}
+
+	}
+}

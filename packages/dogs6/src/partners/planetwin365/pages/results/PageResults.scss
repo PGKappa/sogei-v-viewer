@@ -1,0 +1,98 @@
+.resultSection {
+	.results-header {
+		background-color: $COLOR__HEADER_PRIMARY;
+		color: $COLOR__TABLE_HEADER_TEXT;
+	}
+
+	.dataSection {
+		.internalContainer {
+			border-color: $COLOR__PAGE_RESULTS_TABLE_BORDER;
+			#header-v2 {
+				background-color: $COLOR__PAGE_RESULTS_TABLE_HEADER_PRIMARY;
+			}
+			
+			.internal-header {
+				background-color: $COLOR__PAGE_RESULTS_TABLE_HEADER_EVEN;
+				color: $COLOR__TABLE_HEADER_TEXT;
+			}
+		}
+		.title-container {
+			background-color: $COLOR__PAGE_RESULTS_TABLE_HEADER_ODD;
+			color: $COLOR__TABLE_HEADER_TEXT;
+			border-color: $COLOR__TABLE_HEADER_ODD;
+		}
+	}
+}
+
+.footer {
+	background-color: $COLOR__FOOTER;
+}
+
+@media only screen and (min-width: 290px)   {
+	.resultSection {
+		.dataSection {
+
+			.table-content {
+				//color: rgba(26, 51, 94, 0.8);
+
+				.dataColumn {
+					&:nth-child(1) {
+						border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+					}
+
+					.columnResult {
+						background-color: $COLOR__TABLE_ROW_ODD;
+
+						&:nth-child(even) {
+							background-color: $COLOR__TABLE_ROW_EVEN;
+						}
+
+						.dataContainerTop {
+							.racerInfoContainer {
+								.racerName {
+									color: $COLOR__TABLE_ROW_TEXT;
+								}
+							}
+						}
+					}
+
+					.columnTitleContainer {
+						color: $COLOR__TABLE_ROW_TEXT;
+					}
+
+					.dataContainer {
+						color: $COLOR__TABLE_ROW_TEXT;
+					}
+
+					.columnNormal {
+						color: $COLOR__TABLE_ROW_TEXT;
+					}
+
+					.columnMedalContainerTriple {
+						.columnMedalContainerTripleInternal {
+							&:nth-child(2) {
+								border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.racerOdds {
+			color: $COLOR__TABLE_ROW_TEXT;
+		}
+
+		.nextEventContainer {
+			background-color: $COLOR__TABLE_HEADER_ODD;
+			color: $COLOR__TABLE_HEADER_TEXT;
+			border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+		}
+
+		.bottomContainer {
+			background-color: $COLOR__TABLE_ROW_ODD;
+			color: $COLOR__TABLE_ROW_TEXT;
+
+		}
+	}
+}

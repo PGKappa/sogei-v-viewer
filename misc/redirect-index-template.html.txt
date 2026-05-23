@@ -1,0 +1,20 @@
+<script>
+    var queryString = {};
+    window.onload = function () {
+        var tmp = window.location.search.split('?');
+        if (tmp.length > 1) {
+            var params = tmp[1].split('&');
+            for (var i = 0; i < params.length; i++) {
+                tmp = params[i].split('=');
+                var key = tmp[0];
+                var value = decodeURIComponent(tmp[1]);
+                queryString[key] = value;
+                
+            }
+        }
+        queryString['callback_domain'] = location.origin + location.pathname;
+        var newUrl = "${V_VIEWER_API_URL}?";
+        newUrl += Object.keys(queryString).map(x => `${x}=${encodeURIComponent(queryString[x])}`).join("&");
+        window.location = newUrl;
+    }
+</script>

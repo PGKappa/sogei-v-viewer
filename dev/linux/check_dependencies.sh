@@ -1,0 +1,3 @@
+echo "docker-compose installed?" 
+echo Installing...
+echo ok

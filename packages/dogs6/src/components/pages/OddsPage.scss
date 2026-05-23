@@ -1,0 +1,120 @@
+%no-transition {
+	/*CSS transitions*/
+	-o-transition-property: none !important;
+	-moz-transition-property: none !important;
+	-ms-transition-property: none !important;
+	-webkit-transition-property: none !important;
+	transition-property: none !important;
+	/*CSS transforms*/
+	-o-transform: none !important;
+	-moz-transform: none !important;
+	-ms-transform: none !important;
+	-webkit-transform: none !important;
+	transform: none !important;
+	/*CSS animations*/
+	-webkit-animation: none !important;
+	-moz-animation: none !important;
+	-o-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+}
+
+.notransition {
+	@extend %no-transition;
+
+	* {
+		@extend %no-transition;
+	}
+}
+
+.main {
+	width: 100%;			
+	height: calc(100% - 5.555555556vh);
+	
+	display: flex;
+	flex-direction: column;
+	// flex: 1;
+
+	>.wrapper {
+		position: relative;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		border-width: 0;
+
+		.version-container {
+			display: none;
+		}
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.right {
+			border-left-width: 1.296296296296296vh;
+			border-left-style: solid;
+			display: none;
+		}
+	}
+}
+
+.full {
+	.main {
+		height: 85.18518518399999vh;
+
+		.wrapper {
+			border-width: 1.296296296296296vh;
+			border-style: solid;
+
+			.version-container {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				height: 1.296296296296296vh;
+				transform: translateY(100%);
+				display: flex;
+				align-items: center;
+
+				.version {
+					font-size: 0.996296296296296vh;
+				}
+			}
+
+			.right {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.main {
+		width: 100%;
+		height: calc(100% - 5.555555556vh);
+
+		.wrapper {
+			width: 100%;
+			height: 100%;
+
+			.div-that-needs-a-className {
+				.left {
+					display: grid;
+					grid-auto-rows: 33.3% 33.3% 33.4%;
+				}
+
+				.right {
+					min-width: 22.2%;
+				}
+			}
+		}
+	}
+}
+
+.header-v2 {	
+	.main {
+		height: 85.18518518399999vh;
+	}
+}

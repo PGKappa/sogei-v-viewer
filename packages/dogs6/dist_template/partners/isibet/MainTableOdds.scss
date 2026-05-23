@@ -1,0 +1,52 @@
+.table-main-odds {
+	.main-table-column {
+		&:first-of-type {
+			.content {
+				border-left-style: solid!important;
+				border-left-width: 2px;
+				border-left-style: solid;
+			}
+		}
+
+		&:last-of-type {
+			.content {
+				border-right-width: 2px;
+				border-right-style: solid;
+			}
+		}
+		//border-color: rgba(219, 219, 219, .8);
+		.main-table-column-title {
+			background-color: rgba(26, 51, 94, .75);
+			color: $COLOR__TABLE_HEADER_TEXT;
+		}
+	}
+
+	.content {
+		border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER; //rgba(219, 219, 219, .8);
+		border-bottom-style: solid!important;
+
+		.row {
+			color: $COLOR__TABLE_ROW_TEXT;
+
+			&:nth-child(odd) {
+				background-color: $COLOR__TABLE_ROW_ODD;
+			}
+
+			&:nth-child(even) {
+				background-color: $COLOR__TABLE_ROW_EVEN;
+			}
+
+			&.odds {
+				border-color: rgba(219, 219, 219, .8);
+
+				&.min {
+					color: $COLOR__TABLE_MIN_ODDS_TEXT;
+				}
+
+				&.max {
+					color: $COLOR__TABLE_MAX_ODDS_TEXT;
+				}
+			}
+		}
+	}
+}

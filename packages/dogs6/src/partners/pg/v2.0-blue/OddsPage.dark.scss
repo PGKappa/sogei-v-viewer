@@ -1,0 +1,11 @@
+.gui-mode-dark {
+    .main {
+        >.wrapper {
+            border-color: $COLOR__DARK__BORDER_PAGE_ODDS;
+
+            .right {
+                border-color: $COLOR__DARK__BORDER_PAGE_ODDS;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+section.footer {
+	background-color: $COLOR__FOOTER;
+	color: $COLOR__FOOTER_TEXT;
+	height: $SIZE__THEME__FOOTER_HEIGHT !important;
+}
+
+.footer-out-of-page {
+  #app-container {
+		#page-container {
+			height: #{100vh - $SIZE__THEME__FOOTER_HEIGHT} !important
+		}
+    	#footer-container {
+			height: $SIZE__THEME__FOOTER_HEIGHT !important;
+		}
+  }
+}
+
+
+.full section.footer {
+	.legend {
+		.max-odds,
+		.min-odds {
+			justify-content: space-evenly;
+
+			.color {
+				width: 5vh;
+			}
+
+			.text {
+				font-size: 2vh!important;
+				margin-left: 0px!important;
+			}
+		}
+	}
+	.scrolling-text-container {
+		color: $COLOR__FOOTER_SLIDING_TEXT;
+		font-size: 2.5vh!important;
+		line-height: 2.5vh!important;
+	}
+}

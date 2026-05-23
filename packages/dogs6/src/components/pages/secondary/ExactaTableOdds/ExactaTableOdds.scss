@@ -1,0 +1,167 @@
+.page-secondary {
+	#exacta-table-odds {
+		display: flex;
+		flex: 1;
+		min-height: 30%;
+		flex-direction: column;
+		border-top-width: 1.296296296296296vh;
+		border-top-style: solid;
+
+		.content {
+			width: 100%;
+			flex: 1;
+			display: flex;
+
+			.exacta-table-column {
+				width: 100%;
+				height: 100%;
+
+				border-left-width: 2px;
+				border-left-style: solid;
+
+				&:first-of-type {
+					border-width: 0px;
+					border-style: none;
+				}
+
+				.exacta-table-entry {
+					padding: 0 1.3888888888888888vh;
+					display: flex;
+					align-items: center;
+					height: 20%;
+
+					.exacta-table-num-container {
+						height: 100%;
+						display: flex;
+						align-items: center;
+
+						.racer-wrapper {
+							width: 3.0555555555555554vh;
+							height: 3.0555555555555554vh;
+							margin: auto 0;
+
+							&:nth-child(2) {
+								margin-left: 0.5555555555555556vh;
+							}
+
+							.racer {
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								border-radius: 3px;
+								font-size: 2.2vh;
+								line-height: 1.9vh;
+							}
+						}
+					}
+
+					.exacta-table-odds {
+						margin: auto 0 auto auto;
+						font-size: 2.037037037037037vh;
+						line-height: 2.037037037037037vh;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+	.page-secondary {
+		#exacta-table-odds {
+			display: grid;
+			grid-template-rows: 4.7vh repeat(5, 1fr);
+
+			.exacta-table-title-bar {
+				height: 100%;
+			}
+
+			.content {
+				height: 100%;
+				grid-row-start: 2;
+				grid-row-end: 7;
+
+				.exacta-table-column {
+					display: grid;
+					grid-template-rows: 20% 20% 20% 20% 20%;
+
+					.exacta-table-entry {
+						height: 100%;
+						flex-direction: row;
+						align-items: center;
+
+						.exacta-table-num-container {
+							height: 100%;
+						}
+
+						.exacta-table-odds {
+							display: flex;
+							margin: 0 0 0 auto;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 360px) {
+	.page-secondary {
+		#exacta-table-odds {
+			min-height: 30%;
+			flex: 1;
+			display: grid;
+			grid-template-rows: 4.5vh repeat(5, 1fr);
+
+			.exacta-table-title-bar {
+				width: 100%;
+				height: 100%;
+			}
+
+			.content {
+				height: 100%;
+				grid-row-start: 2;
+				grid-row-end: 7;
+
+				.exacta-table-column {
+					display: grid;
+					grid-template-rows: repeat(5, 1fr);
+
+					.exacta-table-entry {
+						height: 100%;
+						padding: 0 10%;
+						flex-direction: row;
+						align-items: center;
+
+						.exacta-table-num-container {
+							height: 100%;
+
+							.racer-wrapper {
+								&:nth-child(2) {
+									margin-left: 1px;
+								}
+							}
+						}
+
+						.exacta-table-odds {
+							display: flex;
+							margin: 0 6% 0 auto;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 633px) {
+	.page-secondary {
+		#exacta-table-odds .content .exacta-table-column .exacta-table-entry .exacta-table-odds {
+			font-size: 2.4074074074074074vh;
+		}
+	}
+}

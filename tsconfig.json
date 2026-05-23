@@ -1,0 +1,17 @@
+{
+    "extends": "./tsconfig.build.json",
+    "compilerOptions": {
+        "paths": {
+            "@v-viewer/core/*": ["./packages/core/src/*"],
+            "@v-viewer/race-common/*": ["./packages/race-common/*"],
+            "@v-viewer/dogs6/*": ["./packages/dogs6/src/*"],
+            "*": ["./node_modules/*"]
+        }
+    },
+    "references": [{
+        "path": "./packages/core"
+    }, {
+        "path": "./packages/race-common"
+    }],
+    "esModuleInterop": true
+}

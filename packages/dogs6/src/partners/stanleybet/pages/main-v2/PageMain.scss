@@ -1,0 +1,126 @@
+.main-table-v2 {
+    border-color: $COLOR__BORDER_PAGE_ODDS_NOT_FULL;
+
+    .main-table-column-v2 {
+        border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+
+        &:first-of-type {
+            .content {
+                border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+                border-left-width: 2px !important;
+                border-left-style: solid !important;
+            }
+
+        }
+
+        &:last-of-type {
+            .content {
+                border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+                border-right-width: 2px !important;
+                border-right-style: solid !important;
+            }
+        }
+
+        &.direction-row {
+            .content {
+                .row {
+                    &:nth-child(even) {
+                        background-color: $COLOR__TABLE_ROW_ODD;
+                    }
+                }
+            }
+        }
+
+
+
+        .content {
+
+            border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+            border-bottom-width: 2px !important;
+            border-bottom-style: solid !important;
+
+            .row {
+                border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+                color: $COLOR__TABLE_ROW_TEXT;
+
+                &:nth-child(odd) {
+                    background-color: $COLOR__TABLE_ROW_ODD;
+
+                }
+
+                &:nth-child(even) {
+                    background-color: $COLOR__TABLE_ROW_EVEN;
+                }
+
+                &.min {
+                    background-color: $COLOR__MIN_QUOTE !important;
+                    .odds {
+                        color: $COLOR__TABLE_MIN_ODDS_TEXT;
+                    }
+                }
+
+                &.max {
+                    background-color: $COLOR__MAX_QUOTE !important;
+                    .odds {
+                        color: $COLOR__TABLE_MAX_ODDS_TEXT;
+                    }
+                }
+
+            }
+
+         
+
+
+            // PERFORMANCE
+            .performance-inner-container {
+                .performance-container {
+                    background-color: #9dbad1;
+
+                    .performance-cover {
+                        background-color: #999999;
+                    }
+                }
+            }
+
+
+            // HISTORY
+            .history-row-container {
+                .result-container {
+                    border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+                }
+            }
+
+
+        }
+
+    }
+}
+
+
+
+.full {
+    .main-table-v2 {
+        border-color: $COLOR__BORDER_PAGE_ODDS;
+    }
+}
+
+#page-main > section.main > div > div.left > div.wrapper-others > div:nth-child(2) > div > div.content > div.row.max {
+    background-color: $COLOR__MAX_OVER!important ;
+    color:$COLOR__MAX_QUOTE_OVER!important;
+}
+
+#page-main > section.main > div > div.left > div.wrapper-others > div:nth-child(1) > div > div.content > div.row.max {
+    background-color: $COLOR__MAX_OVER!important ;
+    color:$COLOR__MAX_QUOTE_OVER!important;
+}
+
+#page-main > section.main > div > div.left > div.wrapper-others > div:nth-child(2) > div > div.content > div.row.min {
+    background-color: $COLOR__MIN_OVER!important ;
+    color:$COLOR__MIN_QUOTE_OVER!important;
+}
+
+#page-main > section.main > div > div.left > div.wrapper-others > div:nth-child(1) > div > div.content > div.row.min {
+    background-color: $COLOR__MIN_OVER!important ;
+    color:$COLOR__MIN_QUOTE_OVER!important;
+
+}

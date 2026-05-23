@@ -1,0 +1,53 @@
+@import "../../../../components/styles/cross-browser.scss";
+@import "../../../../components/styles/utils.scss";
+
+
+.header-countdown {
+    height: 100%;
+    @extend %flexbox;
+    align-items: center;
+
+    .timer-container {
+        position: relative;
+        margin-left: auto;
+        margin-right: 1.296296296296296vh;
+        width: 3.95vw;
+        min-width: 70px;
+        height: 3vh;
+        @extend %flexbox;
+        align-items: center;
+        
+        .timer-digits {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 3vh;
+            line-height: 2.9vh;
+        }
+    }
+
+    .progress {
+        display: none;
+    }
+}
+
+.full {
+    .header-countdown {
+        width: 100%;
+        height: 100%;
+
+        .progress {
+            width: 20.37037037037037vh;
+            height: 4.444444444444445vh;
+            margin: 0 0 0 0;
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+
+            .bar-item {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  v-viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: sh -c "yarn install && yarn dev:${game_id}"
+    # command: tail -F anything
+    environment:
+      - game_id=${game_id}
+      - GAME_ID=${GAME_ID}
+      - V_VIEWER_INDEX_TEMPLATE=index.template.demo.js
+      #- V_VIEWER_${GAME_ID}_PARTNER=pg
+      - V_VIEWER_${GAME_ID}_PARTNER=stanleybet
+      #
+      #
+      # The V_VIEWER_${GAME_ID}_API_ENDPOINT must be a
+      # running API server with a matching version.
+      #
+      #- V_VIEWER_${GAME_ID}_API_ENDPOINT=(function(){return document.location.protocol + "//" + document.location.hostname + ":9900/${game_id}"}())
+      #- V_VIEWER_${GAME_ID}_API_ENDPOINT="https://api-isibet.pgvirtual.eu/api"
+      - V_VIEWER_${GAME_ID}_API_ENDPOINT="http://192.168.10.116:8080/api"
+
+      #- V_VIEWER_${GAME_ID}_API_ENDPOINT="http://localhost:3000"
+
+      - V_VIEWER_${GAME_ID}_VARS=
+        var v_param__show_partner_logo=1,
+        v_param__full=1,
+        v_param__audio=1,
+        v_param__gui_layout_version='v2',
+        v_param__operator='stanleybet',
+        v_param__hide_channel=0,
+        v_param_pal_start='07:56',
+        v_param_pal_end='08:00';
+
+      - PORT=8090
+    ports:
+      - "8090:8090"
+    working_dir: /root/v-viewer
+    volumes:
+      - ../:/root/v-viewer:cached

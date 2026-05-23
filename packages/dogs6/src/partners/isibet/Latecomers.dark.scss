@@ -1,0 +1,27 @@
+.full.gui-mode-dark {
+    .right {
+        .latecomers-table {
+            border-color: $COLOR__DARK__BORDER_PAGE_ODDS;
+
+            .latecomers-table-internal {
+                .latecomers-table-column {
+                    border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+
+                    .row-title,
+                    .racer-container,
+                    .delay-container {
+                        color: $COLOR__DARK__TABLE_ROW_TEXT;
+
+                        &:nth-child(odd) {
+                            background-color: $COLOR__DARK__TABLE_ROW_ODD; //rgba(255, 255, 255, 0.85);
+                        }
+
+                        &:nth-child(even) {
+                            background-color: $COLOR__DARK__TABLE_ROW_EVEN; //rgba(229, 229, 229, 0.85);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

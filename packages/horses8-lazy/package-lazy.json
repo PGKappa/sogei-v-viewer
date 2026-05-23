@@ -1,0 +1,9 @@
+{
+    "name": "@v-viewer/trotting8-lazy",
+    "version": "2.0.1",
+    "private": true,
+    "dependencies": {
+        "@v-viewer/core": "^4.0.35",
+        "@v-viewer/race-common": "^1.0.0"
+    }
+}

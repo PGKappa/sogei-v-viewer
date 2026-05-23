@@ -1,0 +1,154 @@
+@import "../../../components/styles/typography.scss";
+@import "../../../components/styles/cross-browser.scss";
+@import "../../../components/styles/utils.scss";
+
+
+$HEADER_V2_GAME_ICON_WIDTH: vw(55px);
+#header-v2 {
+  @extend %flexbox;
+  flex-direction: column;
+  width: 100%;
+
+  > .primary {
+    width: 14%;
+    height: 5.555555556vh;
+    display: none;
+    position: relative;
+
+
+    .partner-logo {
+    
+      opacity: 1;
+			margin-left: 0px;
+    }
+  }
+
+  > .secondary {
+    height: 5.555555556vh;
+    @extend %flexbox;
+    flex: 1;
+    font-weight: bold;
+    //padding-left: vw(35px);    
+    padding-left: vw(30px);    
+
+    .left {
+      flex: 1;
+      font-size: 14px;
+      @include fluid-type(320px, 1920px, 12px, 26px);
+
+      &.full{
+        width: 100%;
+      }
+      justify-content: space-between;
+      @extend %flexbox;
+
+      .game-details {
+        margin-left: 1.296296296296296vh;
+        @extend %flexbox;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        
+        .primary {
+          @extend %flexbox;
+          position: relative;
+          height: vh(36px);
+          .game-icon-wrapper {
+            position: relative;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+            position:absolute;
+            top: 47%;
+          }
+          .game-name {            
+            display: block;
+            font-size: 14px;
+            @include fluid-type(320px, 1920px, 12px, 26px);
+            margin-left: #{$HEADER_V2_GAME_ICON_WIDTH + vw(20px)};
+          }  
+          .channel-name {            
+            font-size: 14px;
+            @include fluid-type(320px, 1920px, 12px, 26px);
+            margin-left: vw(22px);
+          }
+        }
+        .secondary {
+          @extend %flexbox;
+          
+          .event-name {
+            font-size: 8px;
+            @include fluid-type(320px, 1920px, 8px, 22px);
+            margin-left: #{$HEADER_V2_GAME_ICON_WIDTH + vw(20px)};
+            height: vh(30px);
+          }
+        }
+      }
+
+
+      .event-details {
+        @extend %flexbox;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 10px;
+        @include fluid-type(320px, 1920px, 8px, 26px);        
+        margin-right: 0px;
+
+
+        .row1 {
+          height: vh(38px);
+        }
+
+
+        .next-event-desc {
+          //margin-right: 3.8vh;
+          //margin-right: 20px;
+        }
+
+        .next-event-time-desc {
+          margin-right: 0.8205128205128205vh;
+        }
+
+        .next-event-pal-desc {
+          margin-right: 0.8205128205128205vh;
+        }
+
+        .next-event-code-desc {
+          margin-right: 0.717948717948718vh;
+        }
+
+        .pal-and-code {
+          font-size: 10px;
+          @include fluid-type(320px, 1920px, 8px, 22px);          
+          height: vh(30px);
+        }
+      }
+    }
+
+    .right {
+      @extend %flexbox;
+      align-items: center;      
+      width: unset;
+      margin: unset;
+      margin-left: unset;
+      //flex: 1;    
+      min-width: vw(153px);
+    }
+  }
+}
+
+
+@media only screen and (min-width: 633px) {
+  #header-v2 .secondary .left .event-details {
+    font-size: 2.5925925925925926vh;
+    font-size: 10px;
+    @include fluid-type(320px, 1920px, 12px, 26px);
+  }
+}
+
+
+
+@import "Header.options";

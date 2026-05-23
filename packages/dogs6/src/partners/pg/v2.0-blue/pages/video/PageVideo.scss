@@ -1,0 +1,107 @@
+// spostare queste animazioni con i colori nel partner
+@import "../../../../../components/styles/cross-browser.scss";
+@-webkit-keyframes color_change {
+	0% {
+		background-color: black;
+	}
+
+	50% {
+		background-color: rgba(red($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), green($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), blue($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), $ALPHA__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO);
+	}
+
+	100% {
+		background-color: black;
+	}
+}
+
+@-moz-keyframes color_change {
+	0% {
+		background-color: black;
+	}
+
+	50% {
+		background-color: rgba(red($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), green($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), blue($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), $ALPHA__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO);
+	}
+
+	100% {
+		background-color: black;
+	}
+}
+
+@-ms-keyframes color_change {
+	0% {
+		background-color: black;
+	}
+
+	50% {
+		background-color: rgba(red($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), green($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), blue($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), $ALPHA__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO);
+	}
+
+	100% {
+		background-color: black;
+	}
+}
+
+@-o-keyframes color_change {
+	0% {
+		background-color: black;
+	}
+
+	50% {
+		background-color: rgba(red($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), green($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), blue($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), $ALPHA__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO);
+	}
+
+	100% {
+		background-color: black;
+	}
+}
+
+@keyframes color_change {
+	0% {
+		background-color: black;
+	}
+
+	50% {
+		background-color: rgba(red($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), green($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), blue($COLOR__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO), $ALPHA__PAGE_VIDEO_BACKGROUND_COLOR_EFFECT_WHILE_LOADING_VIDEO);
+	}
+
+	100% {
+		background-color: black;
+	}
+}
+
+.videoSection {
+	grid-template-rows: $SIZE__THEME__PAGE_VIDEO__HEADER_HEIGHT 1fr $SIZE__THEME__PAGE_VIDEO__FOOTER_HEIGHT;
+
+	.headSection {
+		background-color: $COLOR__HEADER_PRIMARY;
+		color: $COLOR__HEADER_PRIMARY_TEXT;
+	}
+
+	.mainSection {
+		max-height: #{100vh - $SIZE__THEME__PAGE_VIDEO__HEADER_HEIGHT - $SIZE__THEME__PAGE_VIDEO__FOOTER_HEIGHT};
+
+		&.loading {
+			-webkit-animation: color_change 3s linear infinite alternate;
+			-moz-animation: color_change 3s linear infinite alternate;
+			-ms-animation: color_change 3s linear infinite alternate;
+			-o-animation: color_change 3s linear infinite alternate;
+			animation: color_change 3s linear infinite alternate;
+		}
+	}
+
+	.footerSection {
+		background-color: $COLOR__FOOTER;
+		color: $COLOR__FOOTER_TEXT;
+		z-index: 2;
+		justify-content: flex-end;
+
+		.left {
+			position: absolute;
+			height: 5.555555556vh;
+			top: 0; //.5778vh;
+			z-index: 1;
+			left: 0px;
+		}
+	}
+}

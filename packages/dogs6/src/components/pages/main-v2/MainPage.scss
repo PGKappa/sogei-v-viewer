@@ -1,0 +1,99 @@
+@import "../../styles/sizes";
+@import "../../styles/constants";
+
+.page-main {
+  #page-main  {
+    display: block !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 361px)   {
+	.full .wrapper {
+		width: 100% !important;
+	}
+}
+
+
+
+
+
+/////////////////////////////
+.wrapper-others {
+	display: flex;
+	
+	.main-table-v2 {
+		&:first-of-type {
+			border-left-width: #{$PAGE_ODDS_INTERNAL_BORDER_WIDTH * 0.5};
+			border-right-style: solid;
+		}
+		&:last-of-type {
+			border-left-width: #{$PAGE_ODDS_INTERNAL_BORDER_WIDTH * 0.5};
+			border-left-style: solid;
+		}
+	}
+}
+
+//$NUM_RACERS: 6;
+$TOTAL_HEIGHT: calc(100% - #{$PAGE_ODDS_INTERNAL_BORDER_WIDTH * 4});
+
+
+
+$NUM_TABLE_HEADER_ROWS: 5;
+$NUM_TABLE_WITH_ONE_ROW: 4;
+$NUM_TOTAL_ROWS: $NUM_TABLE_HEADER_ROWS + $NUM_RACERS + $NUM_TABLE_WITH_ONE_ROW;
+
+.main-table-v2.table-racers-info {
+	height: calc(#{$TOTAL_HEIGHT} / #{$NUM_TOTAL_ROWS} * #{$NUM_RACERS + 1});
+	.titlebar {
+		height: calc(100% / #{$NUM_RACERS + 1});
+		min-height: calc(100% / #{$NUM_RACERS + 1});
+		max-height: calc(100% / #{$NUM_RACERS + 1});
+	}
+	.content {
+		height: calc(100% / #{$NUM_RACERS + 1} * #{$NUM_RACERS});
+		.row  {
+			//height: 50px;
+	
+			min-height: calc(100% / #{$NUM_RACERS});
+			max-height: calc(100% / #{$NUM_RACERS});
+			height: calc(100% / #{$NUM_RACERS});
+			flex: unset;
+		}
+	}
+}
+
+.main-table-v2.main-table-odds-v2 {
+	height: calc(#{$TOTAL_HEIGHT} / #{$NUM_TOTAL_ROWS} * 2 + #{$PAGE_ODDS_INTERNAL_BORDER_WIDTH});
+	border-top-width: $PAGE_ODDS_INTERNAL_BORDER_WIDTH; 
+	border-top-style: solid;
+	.main-table-column-v2 {
+		.titlebar, .content {
+			height: 50%;
+			min-height: 50%;
+			max-height: 50%;
+		}
+	}	
+}
+
+.wrapper-others {	
+	height: calc(#{$TOTAL_HEIGHT} / #{$NUM_TOTAL_ROWS} * 2 + #{$PAGE_ODDS_INTERNAL_BORDER_WIDTH}); 
+	.main-table-v2.main-table-odds-v2 {
+		height: 100%;
+		.titlebar, .content {
+			min-height: 50%;
+		}
+
+		.content {
+			.row {
+				.main-table-odds-entry {
+					.left-item {
+						font-size: 2.2222222222222223vh;
+					}
+				}
+			}			
+		}
+	}
+}
+

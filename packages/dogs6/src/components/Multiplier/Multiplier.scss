@@ -1,0 +1,22 @@
+@import "../styles/typography";
+@import "../styles/utils";
+
+.multiplier {
+  position: absolute;
+  width: vh(40px);
+  height: vh(40px);
+
+  border-width: 1px;
+  border-style: solid;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0.4;
+  @include fluid-type(320px, 1920px, 12px, 25px);
+
+  &.active {
+    opacity: 1;
+  }
+}

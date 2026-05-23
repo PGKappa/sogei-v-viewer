@@ -1,0 +1,41 @@
+.page-secondary {
+	#quinella-table-odds {
+		border-color: $COLOR__BORDER_PAGE_ODDS_NOT_FULL;
+		border-top-width: #{$PAGE_ODDS_INTERNAL_BORDER_WIDTH} !important;
+		border-top-style: solid;
+	}
+
+	#boxedtrifecta-table-odds {
+		border-color: $COLOR__BORDER_PAGE_ODDS_NOT_FULL;
+		//border-width: calc(max(#{$PAGE_ODDS_INTERNAL_BORDER_WIDTH}, #{$PAGE_ODDS_INTERNAL_BORDER_MIN_WIDTH})) !important;
+		border-top-width: #{$PAGE_ODDS_INTERNAL_BORDER_WIDTH} !important;
+		border-top-style: solid;
+
+		.boxedtrifecta-table-content {
+			.boxedtrifecta-table-column{
+				border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+				border-bottom-width: 2px !important;
+				border-bottom-style: solid !important;
+				&:first-of-type {
+					border-left-width: 2px !important;
+					border-left-style: solid !important;
+				}
+	
+				&:last-of-type {
+					border-right-width: 2px !important;
+					border-right-style: solid !important;
+				}
+			}
+		}
+	}
+}
+
+
+.page-secondary.full {
+	#quinella-table-odds {
+		border-color: $COLOR__BORDER_PAGE_ODDS;
+	}
+	#boxedtrifecta-table-odds {
+		border-color: $COLOR__BORDER_PAGE_ODDS;
+	}
+}

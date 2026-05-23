@@ -1,0 +1,87 @@
+// spostare queste animazioni con i colori nel partner
+@-webkit-keyframes color_change {
+	0%   {
+		background-color: black;
+	}
+  50%  {
+		background-color: rgba(47, 97, 136, 0.2);
+	}
+  100% {
+		background-color: black;
+	}
+}
+@-moz-keyframes color_change {
+	0%   {
+		background-color: black;
+	}
+  50%  {
+		background-color: rgba(47, 97, 136, 0.2)
+	}
+  100% {
+		background-color: black;
+	}
+}
+@-ms-keyframes color_change {
+	0%   {
+		background-color: black;
+	}
+  50%  {
+		background-color: rgba(47, 97, 136, 0.2)
+	}
+  100% {
+		background-color: black;
+	}
+}
+@-o-keyframes color_change {
+	0%   {
+		background-color: black;
+	}
+  50%  {
+		background-color: rgba(47, 97, 136, 0.2)
+	}
+  100% {
+		background-color: black;
+	}
+}
+@keyframes color_change {
+	0%   {
+		background-color: black;
+	}
+  50%  {
+		background-color: rgba(47, 97, 136, 0.2)
+	}
+  100% {
+		background-color: black;
+	}
+}
+
+.videoSection {	
+	.headSection {
+		background-color: $COLOR__HEADER_PRIMARY;
+		color: $COLOR__HEADER_PRIMARY_TEXT;
+	}
+
+	.mainSection  {
+		&.loading {
+			-webkit-animation: color_change 3s infinite alternate;
+		-moz-animation: color_change 3s infinite alternate;
+		-ms-animation: color_change 3s infinite alternate;
+		-o-animation: color_change 3s infinite alternate;
+		animation: color_change 3s infinite;
+		}
+	}
+
+	.footerSection {
+		background-color: $COLOR__FOOTER;
+		color: $COLOR__FOOTER_TEXT;
+		z-index: 2;
+		justify-content: flex-end;
+		.left {
+			position: absolute;
+			height: 5.555555556vh;
+			top: 0; //.5778vh;
+			z-index: 1;
+			left: 0px;
+		}
+	}
+}

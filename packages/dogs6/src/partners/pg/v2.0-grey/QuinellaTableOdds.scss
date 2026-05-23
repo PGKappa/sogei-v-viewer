@@ -1,0 +1,74 @@
+.quinella-div {
+	border-color: $COLOR__BORDER_PAGE_ODDS;
+	border-width: calc(max(#{$PAGE_ODDS_INTERNAL_BORDER_WIDTH}, #{$PAGE_ODDS_INTERNAL_BORDER_MIN_WIDTH})) !important;
+
+	.quinella-table-title {
+		color: $COLOR__TABLE_HEADER_TEXT;
+	}
+}
+
+#quinella-table-odds {
+
+	.quinella-table-content {
+		.quinella-table-column {
+			border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+
+			.quinella-table-entry {
+
+				//background-color: rgba(255, 255, 255, 0.85);
+				&:nth-child(odd) {
+					background-color: $COLOR__TABLE_ROW_ODD; //rgba(229, 229, 229, 0.85);
+				}
+
+				&:nth-child(even) {
+					background-color: $COLOR__TABLE_ROW_EVEN; //rgba(229, 229, 229, 0.85);
+				}
+
+				.quinella-table-odds {
+					color: $COLOR__TABLE_ROW_TEXT;
+
+					&.min {
+						color: #008800;
+					}
+
+					&.max {
+						color: #FF0000;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.gui-mode-dark {
+	.quinella-div {
+		border-color: $COLOR__BORDER_PAGE_ODDS;
+	}
+
+	#quinella-table-odds {
+
+		.quinella-table-content {
+			.quinella-table-column {
+				border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+
+				.quinella-table-entry {
+
+					//background-color: rgba(255, 255, 255, 0.85);
+					&:nth-child(odd) {
+						background-color: $COLOR__DARK__TABLE_ROW_ODD; //rgba(229, 229, 229, 0.85);
+					}
+
+					&:nth-child(even) {
+						background-color: $COLOR__DARK__TABLE_ROW_EVEN; //rgba(229, 229, 229, 0.85);
+					}
+
+					.quinella-table-odds {
+						color: $COLOR__DARK__TABLE_ROW_TEXT;
+					}
+				}
+			}
+		}
+	}
+
+}

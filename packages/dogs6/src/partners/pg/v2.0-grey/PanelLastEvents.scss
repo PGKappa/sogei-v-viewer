@@ -1,0 +1,73 @@
+.last-events-table {
+	.header {
+		.primary {
+			background-color: $COLOR__RIGHT_PANEL_HEADER_PRIMARY;
+			color: $COLOR__RIGHT_PANEL_HEADER_PRIMARY_TEXT;
+		}
+
+		.secondary {
+			.titlebar {
+				color: $COLOR__TABLE_HEADER_TEXT;
+
+				&:nth-of-type(odd) {
+					background-color: $COLOR__TABLE_HEADER_ODD;
+				}
+
+				&:nth-of-type(even) {
+					background-color: $COLOR__TABLE_HEADER_EVEN;
+				}
+			}
+		}
+	}
+
+	.content {
+		color: $COLOR__TABLE_ROW_TEXT;
+		.column {
+			border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+			border-bottom-style: none !important;
+			border-bottom-width: 0!important;
+
+			&:first-of-type {
+				border-left-style: none;
+				border-left-width: 0;
+			}
+
+			&:last-of-type {
+				border-right-style: none;
+				border-right-width: 0;
+			}
+
+
+			.row {
+				&:nth-child(odd) {
+					background-color: $COLOR__TABLE_ROW_ODD;
+				}
+
+				&:nth-child(even) {
+					background-color: $COLOR__TABLE_ROW_EVEN;
+				}
+			}
+		}
+	}
+}
+
+
+.gui-mode-dark {
+	.last-events-table {
+		.content {
+			color: $COLOR__DARK__TABLE_ROW_TEXT;
+			.column {
+				border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+				.row {
+					&:nth-child(odd) {
+						background-color: $COLOR__DARK__TABLE_ROW_ODD;
+					}
+	
+					&:nth-child(even) {
+						background-color: $COLOR__DARK__TABLE_ROW_EVEN;
+					}
+				}
+			}
+		}
+	}
+}

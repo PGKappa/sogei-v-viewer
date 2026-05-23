@@ -1,0 +1,12 @@
+{
+    "extends": "../../tsconfig.json",
+  
+    "compilerOptions": {
+        "sourceMap": false,
+        "paths": {
+            "@v-viewer/core": ["./src"]
+        }
+    },
+    "include": ["src/**/*"],
+    
+  }

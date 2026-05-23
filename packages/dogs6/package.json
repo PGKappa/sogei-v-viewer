@@ -1,0 +1,21 @@
+{
+  "name": "@v-viewer/dogs6",
+  "version": "4.2.2",
+  "private": true,
+  "scripts": {
+    "copy": "node scripts/copy",
+    "dist": "node scripts/dist"
+  },
+  "dependencies": {
+    "@v-viewer/core": "^4.0.35",
+    "shelljs": "^0.8.4",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "imports": "^1.0.0",
+    "sinon": "^9.2.4"
+  }
+}

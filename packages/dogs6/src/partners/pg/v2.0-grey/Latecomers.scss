@@ -1,0 +1,103 @@
+.latecomers-table {
+	border-color: $COLOR__BORDER_PAGE_ODDS;
+	border-width: $PAGE_ODDS_INTERNAL_BORDER_WIDTH !important;
+	min-height: $SIZE__THEME__PANEL_LATECOMERS__MIN_HEIGHT;
+	max-height: $SIZE__THEME__PANEL_LATECOMERS__MAX_HEIGHT;
+
+	.latecomers-table-column-titles {
+		color: $COLOR__TABLE_HEADER_TEXT;
+		//background-color: rgba(26, 51, 94, .85);
+
+		.column-title {
+			&:nth-child(odd) {
+				background-color: $COLOR__TABLE_HEADER_ODD;
+			}
+
+			&:nth-child(even) {
+				background-color: $COLOR__TABLE_HEADER_EVEN;
+			}
+		}
+
+		/*
+		.column-title:nth-child(2) {
+			background-color: rgba(47, 97, 136, .85);
+		}
+    */
+	}
+}
+
+.full {
+	.right {
+		.latecomers-table {
+			.header {
+
+				.latecomers-table-title-bar {
+					background-color: $COLOR__LATECOMERS_HEADER_PRIMARY; //rgba(26, 51, 94, 0.85);
+					color: $COLOR__LATECOMERS_HEADER_TEXT;
+				}
+			}
+
+			.latecomers-table-internal {
+				.latecomers-table-column {
+					border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+
+					&:first-of-type {
+						border-left-style: none;
+						border-left-width: 0;
+					}
+
+					&:last-of-type {
+						border-right-style: none;
+						border-right-width: 0;
+					}
+
+					.row-title,
+					.racer-container,
+					.delay-container {
+						color: $COLOR__TABLE_ROW_TEXT;
+
+						&:nth-child(odd) {
+							background-color: $COLOR__TABLE_ROW_ODD; //rgba(255, 255, 255, 0.85);
+						}
+
+						&:nth-child(even) {
+							background-color: $COLOR__TABLE_ROW_EVEN; //rgba(229, 229, 229, 0.85);
+						}
+					}
+
+					.racer-container {
+						border-color: rgba(213, 213, 213, .75);
+					}
+				}
+			}
+		}
+	}
+}
+
+.gui-mode-dark {
+	.full {
+		.right {
+			.latecomers-table {
+				.latecomers-table-internal {
+					.latecomers-table-column {
+						border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+			
+						.row-title,
+						.racer-container,
+						.delay-container {
+							color: $COLOR__DARK__TABLE_ROW_TEXT;
+			
+							&:nth-child(odd) {
+								background-color: $COLOR__DARK__TABLE_ROW_ODD; //rgba(255, 255, 255, 0.85);
+							}
+			
+							&:nth-child(even) {
+								background-color: $COLOR__DARK__TABLE_ROW_EVEN; //rgba(229, 229, 229, 0.85);
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}

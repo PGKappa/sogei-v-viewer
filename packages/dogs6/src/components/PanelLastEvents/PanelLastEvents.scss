@@ -1,0 +1,236 @@
+@import "../styles/utils";
+
+$COLUMN_TIME_WIDTH: 14.5%;
+$COLUMN_EVENT_WIDTH: 27%;
+$COLUMN_ARRIVAL_WIDTH: 58.5%;
+
+.last-events-table {
+	display: flex;
+	flex-direction: column;
+
+	.header {
+		display: flex;
+		flex-direction: column;
+
+		.primary {
+			.title {
+				margin: 0;
+			}
+		}
+
+		.secondary {
+			display: flex;
+			justify-content: center;
+			font-weight: bold;
+
+			> div {
+				height: 100%;
+				font-size: 1.6666666666666667vh;
+				> span {
+					
+					line-height: 1.6666666666666667vh;	
+				}
+
+				&.time {
+					//width: 18%;
+					width: 15%;
+					width: $COLUMN_TIME_WIDTH;
+					max-width: $COLUMN_TIME_WIDTH;
+					min-width: $COLUMN_TIME_WIDTH;
+				}
+
+				&.event {
+					//width: 23%;
+					width: 26%;
+					//justify-content: space-evenly;
+					//flex-direction: column;
+					width: $COLUMN_EVENT_WIDTH;
+					max-width: $COLUMN_EVENT_WIDTH;
+					min-width: $COLUMN_EVENT_WIDTH;
+					border-bottom: 0;
+					
+					> span {
+						margin-left: 4px;
+					}
+				}
+
+				&.arrival {
+					flex: 1;
+					width: $COLUMN_ARRIVAL_WIDTH;
+					max-width: $COLUMN_ARRIVAL_WIDTH;
+					min-width: $COLUMN_ARRIVAL_WIDTH;					
+				}
+			}
+		}
+	}
+
+	.content {
+		width: 100%;
+		display: flex;
+
+		.column {
+			display: flex;
+			flex-direction: column;
+			font-weight: bold;
+			border-left-style: solid;
+			border-left-width: 1px;
+			border-right-style: solid;
+			border-right-width: 1px;
+			border-bottom-style: none;
+			border-bottom-width: 0px;
+
+			&.time {}
+
+			&.event {
+				margin: 0 2px;
+			}
+
+			&.arrival {
+				flex: 1;
+
+				.racer-container {
+					display: flex;
+					flex: 1;
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+
+			.row {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+.full {
+	.last-events-table {
+		flex: 2;
+
+		.header {
+			.primary,
+			.secondary {
+				height: vh(50px);				
+			}
+		}
+
+		.content {
+			//height: 100%;
+			//flex: 1;
+
+			height: calc(100% - #{2 * vh(50px)});
+
+			.arrival,
+			.event,
+			.time {
+				border-top-style: none;
+				border-top-width: 0px;
+				.row {
+					width: 100%;
+					flex: 1;
+					font-size: 1.3888888888888888vh;
+					line-height: 1.3888888888888888vh;
+
+
+					.racer-container {
+						height: 100%;
+						padding-top: 0.18518518518518517vh;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+
+						.racer-wrapper {
+							width: 2.4074074074074074vh;
+							height: 2.4074074074074074vh;
+
+							.racer {
+								font-size: 1.6666666666666667vh;
+								line-height: 1.6666666666666667vh;
+							}
+						}
+
+						.racer-name {
+							//margin-top: 0.37037037037037035vh;
+							margin-top: 0.5555555555555556vh;
+							font-size: 1.0185185185185186vh;							
+							line-height: 1.0185185185185186vh;							
+							//line-height: 1vh;
+						}
+					}
+				}
+			}
+
+			> .time {
+				//width: 18%;
+				//width: 15%;				
+				width: $COLUMN_TIME_WIDTH;
+				max-width: $COLUMN_TIME_WIDTH;
+				min-width: $COLUMN_TIME_WIDTH;
+			}
+
+			> .event {
+				
+				width: $COLUMN_EVENT_WIDTH;
+				max-width: $COLUMN_EVENT_WIDTH;
+				min-width: $COLUMN_EVENT_WIDTH;
+				margin: 0;
+				
+			}
+
+			> .arrival {
+				//width: 59%;				
+				width: $COLUMN_ARRIVAL_WIDTH;
+				max-width: $COLUMN_ARRIVAL_WIDTH;
+				min-width: $COLUMN_ARRIVAL_WIDTH;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 633px) {
+	.full .last-events-table .header .primary {
+		font-size: 2.2222222222222223vh;
+	}
+
+	.last-events-table {
+		.header .primary > div {
+			font-size: 1.6666666666666667vh;
+		}
+
+	}
+
+	.full {
+		.last-events-table {
+			.content {
+				.arrival .row,
+				.time .row {
+					//font-size: 1.4814814814814814vh;
+					//font-size: 1.3vh;
+					font-size: 1.4814814814814814vh;
+				}
+
+				.event .row {
+					//padding-top: 4px!important;
+					//flex-direction: column;
+					font-size: 1.2vh;
+					font-size: 1.4814814814814814vh;					
+					justify-content: space-evenly;
+					line-height: normal;
+					span {
+						line-height: 1.4814814814814814vh;
+					}
+				}
+			}
+		}
+
+	}
+
+	.full .last-events-table .content .arrival .row .racer-container .racer-name,
+	.full .last-events-table .content .event .row .racer-container .racer-name,
+	.full .last-events-table .content .time .row .racer-container .racer-name {
+		//font-size: 1.1111111111111112vh;
+		font-size: 1.2962962962962963vh;
+	}
+}

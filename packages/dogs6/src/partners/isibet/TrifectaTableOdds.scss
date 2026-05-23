@@ -1,0 +1,74 @@
+#trifecta-table-odds {
+	.trifecta-table-title-bar{
+		background-color: $COLOR__TABLE_HEADER_ODD;
+
+		.trifecta-table-title {
+			color: $COLOR__TABLE_HEADER_TEXT;
+		}
+	}
+
+	.trifecta-table-content {
+		border: 2px solid $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+		border-top: none;
+
+		.trifecta-table-column {
+			border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+
+			.trifecta-table-entry {
+				background-color: $COLOR__TABLE_ROW_ODD;
+
+				&:nth-child(even) {
+					background-color: $COLOR__TABLE_ROW_EVEN;
+				}
+
+				.trifecta-odds {
+					color: $COLOR__TABLE_ROW_TEXT;
+				}
+
+				&.min {
+					background-color: $COLOR__MIN_QUOTE !important;
+					color: $COLOR__TABLE_MIN_ODDS_TEXT;
+				}
+
+				&.max {
+					background-color: $COLOR__MAX_QUOTE !important;
+					color: $COLOR__TABLE_MAX_ODDS_TEXT;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 600px)   {
+	#trifecta-table-odds {
+		.trifecta-table-title-bar {
+			background-color: $COLOR__TABLE_HEADER_ODD;
+		}
+
+		.trifecta-table-content {
+			.trifecta-table-column {
+				.trifecta-table-entry {
+					background-color: $COLOR__TABLE_ROW_EVEN;
+
+					&:nth-child(even) {
+						background-color: $COLOR__TABLE_ROW_ODD;
+					}
+
+					.trifecta-odds  {
+						color: $COLOR__TABLE_ROW_TEXT;
+					}
+
+					.min {
+						background-color: $COLOR__TABLE_MIN_ODDS_TEXT;
+						color: $COLOR__TABLE_MIN_ODDS_TEXT;
+					}
+	
+					.max {
+						background-color: $COLOR__TABLE_MAX_ODDS_TEXT;
+						color: $COLOR__TABLE_MAX_ODDS_TEXT;
+					}
+				}
+			}
+		}
+	}
+}	

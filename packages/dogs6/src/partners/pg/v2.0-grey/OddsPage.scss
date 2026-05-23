@@ -1,0 +1,44 @@
+.main {
+	> .wrapper {
+		border-style: none !important;
+		border-color: $COLOR__BORDER_PAGE_ODDS;
+		border-width: calc(max(#{$PAGE_ODDS_INTERNAL_BORDER_WIDTH}, #{$PAGE_ODDS_INTERNAL_BORDER_MIN_WIDTH})) !important;
+
+		border-left-style: solid !important;
+		border-right-style: solid !important;
+
+		.left {
+			.table-main-odds {
+				.main-table-column:nth-child(odd) {
+					.main-table-column-title {
+						background-color: $COLOR__TABLE_HEADER_ODD;
+					}
+				}
+
+				.main-table-column:nth-child(even) {
+					.main-table-column-title {
+						background-color: $COLOR__TABLE_HEADER_EVEN;
+					}
+				}
+			}
+		}
+
+		.right {
+			width: $SIZE__THEME__RIGHT_PANEL_WIDTH;
+			min-width: $SIZE__THEME__RIGHT_PANEL_WIDTH;
+			max-width: $SIZE__THEME__RIGHT_PANEL_WIDTH;
+			border-color: $COLOR__BORDER_PAGE_ODDS;
+			border-width: $PAGE_ODDS_INTERNAL_BORDER_WIDTH !important;
+		}
+	}
+}
+
+.full {
+	.wrapper {
+		border-width: $PAGE_ODDS_EXTERNAL_BORDER_WIDTH !important;
+
+		.version {
+			color: white;
+		}
+	}
+}

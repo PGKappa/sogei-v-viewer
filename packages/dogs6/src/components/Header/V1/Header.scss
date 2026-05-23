@@ -1,0 +1,132 @@
+@import "../../../components/styles/typography";
+@import "../../../components/styles/cross-browser.scss";
+@import "../../../components/styles/utils.scss";
+
+#header {
+  @extend %flexbox;
+  flex-direction: column;
+  width: 100%;
+
+  .primary {
+    width: 14%;
+    height: 5.555555556vh;
+    @extend %flexbox;
+    display: none;
+    position: relative;
+
+   
+  }
+
+  .secondary {
+    height: 5.555555556vh;
+    @extend %flexbox;
+    flex: 1;
+    font-weight: bold;
+
+    .left {
+      width: 92%;
+      justify-content: space-between;
+      @extend %flexbox;
+
+      .game-details {
+        margin-left: 1.296296296296296vh;
+        @extend %flexbox;
+        align-items: center;
+
+        .game-icon-wrapper {
+        
+          /*position: relative;
+          width: 4.444444444444445vh;
+          height: 4.444444444444445vh;
+          padding-left: 4.444444444444445vh;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          background-size: contain;
+          background-repeat: no-repeat;
+          */
+        }
+
+        .game-name {
+          margin-left: 2.037037037037037vh;
+          display: block;
+          font-size: 30px;
+          font-size: 14px;
+          @include fluid-type(320px, 1920px, 12px, 32px);
+        }
+
+        .event-name {
+           @include fluid-type(320px, 1920px, 12px, 26px);
+			      margin-left: vw(28px);
+        }
+      }
+
+
+      .event-details {
+        @extend %flexbox;
+        align-items: center;
+        font-size: 10px;
+        @include fluid-type(320px, 1920px, 8px, 26px);
+
+        .next-event-desc {
+          margin-right: 3.8vh;
+          font-size: 14px;
+          @include fluid-type(320px, 1920px, 12px, 32px);
+        }
+
+        .next-event-time-desc {
+          margin-right: 0.8205128205128205vh;
+        }
+
+        .next-event-time {
+          margin-right: 3.4871794871794872vh;
+        }
+
+        .next-event-pal-desc {
+          margin-right: 0.8205128205128205vh;
+        }
+
+        .next-event-code-desc {
+          margin-right: 0.717948717948718vh;
+        }
+      }
+    }
+
+    .right {
+      margin-left: auto;
+      @extend %flexbox;
+      align-items: center;
+      font-size: 2.8vh;
+    }
+  }
+}
+
+.full {
+  #header {
+    .primary {
+      @extend %flexbox;
+
+      .partner-logo {
+        opacity: 1;
+      }
+    }
+
+    .secondary {
+      .left {
+        // margin-right: 1.296296296296296vh;
+      }
+
+      .right {
+        //min-width: 21.37166666666668vw;
+        margin: auto calc(1.296296296296296vh + 1px) auto auto;       
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 633px) {
+  #header .secondary .left .event-details {
+    font-size: 2.5925925925925926vh;
+    font-size: 10px;
+    @include fluid-type(320px, 1920px, 12px, 28px);
+  }
+}

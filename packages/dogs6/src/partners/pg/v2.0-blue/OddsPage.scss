@@ -1,0 +1,50 @@
+//@import "../../../components/styles/main.scss";
+
+.main {
+	> .wrapper {
+		border-color: $COLOR__BORDER_PAGE_ODDS_NOT_FULL;
+	
+		border-width: $PAGE_ODDS_EXTERNAL_BORDER_WIDTH !important;
+
+		border-style: solid !important;
+
+		.left {
+			.table-main-odds {
+				.main-table-column:nth-child(odd) {
+					.main-table-column-title {
+						background-color: $COLOR__TABLE_HEADER_ODD;
+					}
+				}
+
+				.main-table-column:nth-child(even) {
+					.main-table-column-title {
+						background-color: $COLOR__TABLE_HEADER_EVEN;
+					}
+				}
+			}
+		}
+
+		.right {
+			width: $SIZE__THEME__RIGHT_PANEL_WIDTH;
+			min-width: $SIZE__THEME__RIGHT_PANEL_WIDTH;
+			max-width: $SIZE__THEME__RIGHT_PANEL_WIDTH;
+			border-color: $COLOR__BORDER_PAGE_ODDS;
+			border-width: $PAGE_ODDS_INTERNAL_BORDER_WIDTH !important;
+		}
+	}
+}
+
+.full {
+	.main {
+		> .wrapper {
+			border-color: $COLOR__BORDER_PAGE_ODDS;
+			border-width: $PAGE_ODDS_EXTERNAL_BORDER_WIDTH !important;
+	
+			.version {
+				color: white;
+			}
+		}
+	}	
+}
+
+

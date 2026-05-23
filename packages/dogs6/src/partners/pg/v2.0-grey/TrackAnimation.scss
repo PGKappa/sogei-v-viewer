@@ -1,0 +1,37 @@
+.track-animation {
+  .track-animation-primary {
+    border-color: $COLOR__TABLE_HEADER_EVEN;
+
+    .racerContainer {
+      border-color: $COLOR__TABLE_HEADER_EVEN;
+
+      .racerPosition {
+        background-color: $COLOR__TABLE_HEADER_ODD;
+        color: $COLOR__TABLE_HEADER_TEXT;
+      }
+
+      .racerActualContainer {
+        .racerActual {
+          background-color: $COLOR__TABLE_ROW_ODD;
+          color: $COLOR__TABLE_ROW_TEXT;
+        }
+      }
+    }
+  }
+
+  .track-animation-secondary {
+    .oddsTitle {
+      //background-color: $COLOR__TABLE_HEADER_ODD;
+      background-color: #12324a;
+      color: white;
+    }
+
+    .textContainer {
+      background-color: $COLOR__TABLE_HEADER_EVEN;
+
+      .panelBottomOddsContainer {
+        color: white;
+      }
+    }
+  }
+}

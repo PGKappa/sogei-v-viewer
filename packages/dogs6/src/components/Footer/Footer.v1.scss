@@ -1,0 +1,27 @@
+@import "../styles/utils.scss";
+
+
+section.footer.v1 {
+    .legend {
+        @extend %flexbox;
+
+        .min-odds,
+        .max-odds {                 
+            //width: 12.864583333333334vw;
+            width: vw(238px);
+
+            .text {
+                @include fluid-type(320px, 1920px, 12px, 18px);
+            }
+        }
+
+        .min-odds {
+            padding-right: 0px;
+        }
+    }
+    .scrolling-text-container {
+        margin-left: vw(20px);
+        @include fluid-type(320px, 1920px, 12px, 24px);
+    }
+
+}

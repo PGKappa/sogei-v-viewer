@@ -1,0 +1,150 @@
+@import "../styles/cross-browser";
+@import "../styles/typography";
+@import "../styles/utils";
+
+
+section.footer {
+  width: 100%;
+  height: 3.703703704vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  padding: 0 1.296296296296296vh;
+
+  .legend {
+    width: 100%;
+    height: 100%;
+    // @extend %flexbox;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 49% 49%;
+
+    .color {
+      width: 10.833333333333334vh;
+      height: 1.8518518518518519vh;
+      border-color: white;
+      border-style: solid;
+      border-width: 1px;
+    }
+
+    .min-odds {
+      padding-right: 0.78125vw;
+    }
+
+    .max-odds {
+      padding-right: 0;
+    }
+
+    .max-odds,
+    .min-odds {
+      height: 100%;
+      @extend %flexbox;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .min-odds .color {
+      background-color: #00bb00;
+    }
+
+    .max-odds .color {
+      background-color: #bb0000;
+    }
+
+    .text {
+      margin-left: 1.0416666666666667vw;
+      text-align: left;
+      font-size: 1.5740740740740742vh;
+      line-height: 1.5740740740740742vh;
+      font-size: 8px;      
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+
+  .scrolling-text-container {
+    position: relative;
+    width: calc(100% - 1.296296296296296vh);
+    height: 100%;
+    margin-left: 1.296296296296296vh;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    display: flex;
+    align-items: center;    
+    line-height: 2.2vh;
+    font-weight: bold;
+    overflow: hidden;
+
+    .scrolling-text-1,
+    .scrolling-text-2 {
+      left: 100%;
+      position: absolute;
+      white-space: nowrap;
+      animation-duration: 60s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .scrolling-text-1 {
+      animation-name: scroll-A;
+    }
+
+    .scrolling-text-2 {
+      animation-name: scroll-B;
+      animation-delay: 30s;
+    }
+  }
+}
+
+.full {
+  section.footer {
+    padding: 0 1.296296296296296vh;
+    width: 100%;
+    height: 3.703703704vh;
+    @extend %flexbox;
+
+    .legend {
+      width: 25.729166666666668vw;
+
+      .max-odds,
+      .min-odds {        
+        @extend %flexbox;
+        align-items: center;
+        padding-left: 0;
+
+        .text {
+          margin-left: 1.0416666666666667vw;
+        }
+      }
+    }
+
+  }
+}
+@media only screen and (min-width: 633px) {
+  section.footer .legend .text {
+    font-size: 1.6666666666666667vh;
+  }
+}
+@keyframes scroll-A {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(calc(-72.3vw * 2 - 100%));
+  }
+}
+@keyframes scroll-B {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(calc(-72.3vw * 2 - 100%));
+  }
+}
+
+
+@import "Footer.v1";
+@import "Footer.v2";

@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+  v-viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: sh -c "yarn install && yarn dev:${game_id}"
+    # command: tail -F anything
+    environment:
+      - game_id=${game_id}
+      - GAME_ID=${GAME_ID}
+      - V_VIEWER_INDEX_TEMPLATE=index.template.demo.js
+      #- V_VIEWER_${GAME_ID}_PARTNER=stanleybet
+      - V_VIEWER_${GAME_ID}_PARTNER=pg/v2.0-blue-all
+      - V_VIEWER_${GAME_ID}_API_ENDPOINT=(function(){return document.location.protocol + "//" + document.location.hostname + ":9900/${game_id}"}())
+      - PORT=8090
+    ports:
+      - "8090:8090"
+    working_dir: /root/v-viewer
+    volumes:
+      - ../:/root/v-viewer:cached
+    networks:
+      - frontend
+
+  v-viewer-fake-api:
+    image: node:17-alpine
+    command: sh -c "yarn install && yarn start"
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "9900:3000"
+    working_dir: /root/v-viewer-fake-api
+    volumes:
+      - ../packages/fake-api:/root/v-viewer-fake-api:cached
+    networks:
+      - frontend
+
+networks:
+  frontend:

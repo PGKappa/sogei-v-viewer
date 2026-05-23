@@ -1,0 +1,15 @@
+.replayOuterContainer {
+	//.replayResultsContainer {
+		border-color: $COLOR__TABLE_HEADER_EVEN;
+		color: $COLOR__TABLE_ROW_TEXT;
+
+		.replayResultsHeader {
+			background-color: $COLOR__TABLE_HEADER_EVEN;
+			color: $COLOR__TABLE_HEADER_TEXT;
+		}
+
+		.medaltext {
+			color: $COLOR__TABLE_ROW_TEXT;
+		}
+//	}
+}

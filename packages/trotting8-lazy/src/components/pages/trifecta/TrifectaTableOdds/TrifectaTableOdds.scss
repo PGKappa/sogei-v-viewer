@@ -1,0 +1,122 @@
+// TrifectaTableOdds.v3.scss
+#trifecta-table-odds {
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	display: flex;
+
+	.titlebar {
+		font-weight: bold;
+		margin: 0;
+	}
+
+	.trifecta-table-content {
+		display: flex;
+		flex: 1;
+		overflow: hidden;			
+		flex-direction: column;
+
+		.trifecta-table-content-1 {
+			width: 100%;
+			// flex: 1;
+			display: flex;
+			min-height: calc(100% / 20 * 56);
+			border-bottom-width: 4px;
+			min-width: 100%;
+			height: calc(100% / 20 * 56);
+
+
+		.trifecta-table-column {
+			flex: 1;
+			height: 100%;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			font-weight: bold;
+			border-left-width: 2px;
+			border-left-style: solid;
+
+			&:nth-child(1) {
+				border-width: 0px;
+			}
+
+			.trifecta-table-entry {
+				width: 100%;
+				height: 5.1%;
+				padding-left: 4%;
+				display: flex;
+				align-items: center;
+
+				.trifecta-table-num-container {
+					width: auto;
+					height: 80%;
+					display: flex;
+					align-items: center;
+
+					.racer-wrapper {
+						width: 2.4074074074074074vh;
+						height: 2.4074074074074074vh;
+
+						&:nth-child(2) {
+							margin: 0 0.5555555555555556vh;
+						}
+
+						.racer {
+							font-size: 1.4814814814814814vh;
+							line-height: 1.4814814814814814vh;
+						}
+					}
+				}
+
+				.trifecta-odds {
+					margin: auto 5% auto auto;
+				}
+			}}
+		}
+	}
+}
+
+.trifecta-table-content-1 {
+	animation-iteration-count: 1;	
+	animation-timing-function: linear;
+	animation-name: verticalScrollTrifecta;
+	animation-duration: 15s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes verticalScrollTrifecta {
+	0% {
+		transform: translateY(0%);
+	}
+
+	100% {
+		transform: translateY(-64.285%);
+	}
+}
+
+@media only screen and (min-width: 280px)   {
+	#trifecta-table-odds {
+		.trifecta-table-content {
+			width: 100%;
+			height: 100%;
+
+			.trifecta-table-column {
+				.trifecta-table-entry {
+					.trifecta-odds  {
+						margin: auto 5% auto auto !important;
+						font-size: 1.8518518518518519vh;
+					}
+				}
+			}
+		}
+	}
+}	
+
+@media only screen and (min-width: 633px) {
+	#trifecta-table-odds .trifecta-table-content .trifecta-table-column .trifecta-table-entry .trifecta-odds {
+		font-size: 2.2222222222222223vh;
+	}
+}

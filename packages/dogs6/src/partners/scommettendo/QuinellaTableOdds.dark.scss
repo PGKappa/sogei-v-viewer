@@ -1,0 +1,26 @@
+.gui-mode-dark {
+    #quinella-table-odds {
+        .quinella-table-content {
+            .quinella-table-column {
+                border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+
+                .quinella-table-entry {
+
+                    //background-color: rgba(255, 255, 255, 0.85);
+                    &:nth-child(odd) {
+                        background-color: $COLOR__DARK__TABLE_ROW_ODD; //rgba(229, 229, 229, 0.85);
+                    }
+
+                    &:nth-child(even) {
+                        background-color: $COLOR__DARK__TABLE_ROW_EVEN; //rgba(229, 229, 229, 0.85);
+                    }
+
+                    .quinella-table-odds {
+                        color: $COLOR__DARK__TABLE_ROW_TEXT;
+                    }
+                }
+            }
+        }
+    }
+
+}

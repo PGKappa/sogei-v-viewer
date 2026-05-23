@@ -1,0 +1,36 @@
+{
+  "name": "@v-viewer/core",
+  "description": "PG Virtual - Viewer Core",
+  "version": "4.0.35",
+  "env": "production",
+  "sideEffects": false,
+  "main": "src/index.js",
+  "private": true,
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "scripts": {
+    "test:api": "./node_modules/.bin/mocha --require @babel/register test/api.js",
+    "test:usage": "./node_modules/.bin/mocha --require @babel/register -r jsdom-global/register test/usage.js",
+    "test:utils": "mocha --require @babel/register test/utils.js"
+  },
+  "author": {
+    "name": "Fabrizio Armango",
+    "email": "fabrizio.armango@gmail.com"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.19.0",
+    "chai-json-schema": "^1.5.1",
+    "eslint": "^6.8.0",
+    "nock": "^13.0.5",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7",
+    "sinon": "^9.2.2",
+    "sinon-chai": "^3.5.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "json": "^10.0.0",
+    "webfontloader": "^1.6.28"
+  }
+}

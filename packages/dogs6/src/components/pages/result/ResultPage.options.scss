@@ -1,0 +1,21 @@
+@import "../../styles/utils.scss";
+.show-tag-real .dataSection #header-v2>.secondary .left .game-details .primary .channel-name {
+    margin-left: vw(12px);
+}
+
+
+
+.footer-v1 #page-results .resultSection section.footer.v1 {
+    height: 100% !important;
+}
+
+
+.resultSection .dataSection .internalContainer .title-container .multiplier-container  {
+    width: vh(40px);
+    height: vh(40px);
+    position: absolute;
+    right: vw(20px);
+    top: 10px;
+}
+
+

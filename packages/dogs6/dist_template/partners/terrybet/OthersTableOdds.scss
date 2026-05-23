@@ -1,0 +1,26 @@
+#others-table-odds {
+	.others-table-title-bar {
+		background-color: $COLOR__TABLE_HEADER_EVEN; //rgba(47, 97, 136, 0.85)!important;
+		color: $COLOR__TABLE_HEADER_TEXT;
+	}
+
+	.others-table-content {
+		border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+		border-right-width: 2px;
+		border-right-style: solid;
+		border-bottom-width: 2px!important;
+		border-bottom-style: solid!important;
+
+		.others-panel-content-item {
+			color: $COLOR__TABLE_ROW_TEXT;
+
+			&:nth-child(odd) {
+				background-color: $COLOR__TABLE_ROW_ODD;
+			}
+			&:nth-child(even) {
+				background-color: $COLOR__TABLE_ROW_EVEN;
+			}
+
+		}
+	}
+}

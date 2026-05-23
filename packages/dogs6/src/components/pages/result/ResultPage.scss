@@ -1,0 +1,597 @@
+@import "../../styles/typography";
+@import "../../styles/sizes";
+@import "../../styles/utils";
+@import "../../../components/styles/utils.scss";
+
+
+
+.page-results {
+  #page-results  {
+    display: block !important;
+  }
+}
+
+
+
+.resultSection {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.resultTopSection {
+		position: relative;
+		display: flex;
+		font-size: 2.4074074074074074vh;
+		flex-direction: row;
+		align-items: center;
+		height: vh(30px);
+
+		.subLogoContainer {
+			margin: 0 1.8518518518518519vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.dataSection {
+		height: 100%;
+		display: flex;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 60px auto;
+		flex-direction: column;
+		align-items: center;
+
+		.internalContainer {
+			width: 46.875vw;			
+			height: 72.96296296296296vh;
+			
+			// min-width: 556px;
+			// margin-top: 11.851851851851851vh;
+			display: flex;
+			flex-direction: column;
+			border-left-width: 2px;
+			border-right-width: 2px;
+			border-top-width: 4px;
+			border-bottom-width: 4px;
+			border-style: solid;
+
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+
+			.internal-header {
+				//height: 5.185185185185185vh;
+				height: vh(60px);
+				display: flex;
+				align-items: center;
+				@include fluid-type(320px, 1920px, 8px, 26px);
+				line-height: 2.4vh;
+
+				.internal-info-subLogo {
+					width: 3.3333333333333335vh;
+					height: 3.3333333333333335vh;
+					//margin: auto 1.7592592592592593vh auto 1.8518518518518519vh;
+					margin: auto 1.0416666666666665vw auto 1.0416666666666665vw;
+
+					.game-icon-wrapper {
+					
+						width: 100%;
+						height: 100%;
+						background-size: cover;
+						background-position: center;
+						background-repeat: no-repeat;
+					}
+				}
+
+				.game-name {
+					margin-right: 1.7592592592592593vh;
+				}
+
+				.internal-info-container {
+					margin: auto 1.8518518518518519vh auto auto;
+					display: flex;
+					align-items: center;
+					//font-size: 1.6666666666666667vh;
+					//line-height: 1.5666666666666667vh;
+					font-size: 1.9vh;
+					line-height: 1.9vh;
+
+					.game-name {
+						margin-right: 1.0416666666666667vw;
+						// font-size: 1.8518518518518519vh;
+					}
+
+					.hourTitle {
+						margin-right: 5px;
+					}
+
+					.palTitle {
+						margin-left: 2.037037037037037vh;
+					}
+				}
+			}
+
+			.titlebar {
+				background-color: unset;
+				background-color: transparent;				
+			}
+
+			.title-container {
+				position: relative;
+				width: 100%;
+				height: 5.7407407407407405vh;
+				align-items: center;
+				justify-content: center;
+				border-width: 2px;
+				border-top-style: solid;
+
+			}
+
+			.table-content {
+				display: flex;
+				flex-direction: row;
+				flex: 1;
+				.dataColumn {
+					display: grid;
+					grid-template-rows: 1fr repeat(9, .5fr);
+
+					.columnTitleContainer {
+						width: 100%;
+						height: 100%;
+						display: flex;
+						align-items: center;
+						flex: 1;
+
+						&:first-of-type {
+							flex: 1.5;
+						}
+
+						.columnTitle {
+							margin: auto auto auto 1.2625vw;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 1.7592592592592593vh;
+						}
+					}
+
+					.columnMedalContainerTop {
+						width: 100%;
+						height: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: space-around;
+
+						.columnMedalSubContainerTop {
+							position: relative;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+
+							.columnMedal {
+								height: 52px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.nextEventContainer {
+		height: 5.555555555555555vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2.037037037037037vh;
+		border-width: 2px;
+		border-top-style: solid;
+	}
+
+	.bottomContainer {
+		position: relative;
+		height: 4.62962962962963vh;
+		display: grid;
+		grid-template-columns: 33.3% auto 33.3%;
+		justify-items: center;
+		align-items: center;
+		//font-size: 1.6666666666666667vh;
+		//line-height: 1.6666666666666667vh;
+		font-size: 1.85vh;
+		line-height: 1.85vh;
+
+		.col {
+			height: 100%;			
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			flex: 1;
+
+			border-color: #cfcfcf;			
+			border-left-width: 1px;
+			border-left-style: solid;
+			border-right-width: 1px;			
+			border-right-style: solid;
+
+			
+			&:first-of-type{
+				border-left-width: 0px;
+			}
+			&:last-of-type{
+				border-right-width: 0px;
+			}
+
+			&.center {
+				span {				   
+					 display: flex;
+				}
+			}
+			&.right {
+				font-size: 2vh;
+				line-height: 2vh;
+			}
+		}
+	}
+}
+
+.footer {
+	//height: 5.958291956305859vh;
+}
+@media only screen and (min-width: 290px)   {
+	.resultSection {
+		width: 100%;
+		height: 100% !important;
+		display: grid;
+		grid-template-rows: 5.555555556vh auto 5.555555555555555vh;
+		align-items: center;
+		justify-items: center;
+		font-weight: bold;
+
+		.results-header {
+			width: 100%;
+			height: 100%;
+			display: flex;
+      		position: relative;
+
+			.partner-logo {
+				margin-left: 40px;
+			}
+		}
+
+		.resultTopSection {
+			width: 100%;
+			height: 3.7037037037037037vh;
+			display: flex;
+			align-items: center;
+			font-weight: bold;
+
+			.subLogoContainer {
+				height: 100%;
+				display: flex;
+
+				.subLogo {
+					height: 90%;
+					width: auto;
+				}
+			}
+		}
+
+		.dataSection {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+
+			.title-container {
+				height: 5.555555555555555vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+			}
+
+			.table-content {
+				display: flex;
+				height: 100%;
+
+				.dataColumn {
+					width: 50%;
+					height: 100%;
+					display: grid;
+					grid-template-rows: 2fr repeat(8, 1fr);
+
+					&:nth-child(1) {
+						border-right-width: 2px;
+						border-right-style: solid;
+					}
+
+					.columnResult {
+						display: grid;
+						grid-template-columns: repeat(3, 33.3333333333%);
+						height: 100% !important;
+
+						.dataContainerTop {
+							display: flex;
+							margin-top: 5px;
+
+							.racerInfoContainer {
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								justify-content: center;
+
+								.racerInfoInternal {
+									position: relative;
+									display: flex;
+
+									.racer-wrapper {
+										width: 4.2592592592592595vh;
+										height: 4.2592592592592595vh;
+
+										.racer {
+											font-size: 2.5925925925925926vh;
+										}
+									}
+
+									.racerMedalTopContainer {
+										position: absolute;
+										left: 0;
+										top: 0;
+										width: 4.1vh;
+										height: 4.98vh;
+										transform: translateX(-72%);
+
+										.racerMedalTop {
+											position: absolute;
+											top: 0;
+											left: 0;
+											height: 100%;
+										}
+
+										.racerMedalTopText {
+											position: absolute;
+											top: 0;
+											left: 50%;
+											transform: translate(-50%, 94%);
+											font-size: 1.4814814814814814vh;
+											line-height: 1.4814814814814814vh;
+										}
+									}
+								}
+
+								.racerName {
+									margin-top: 10%;
+									font-size: 1.2037037037037037vh;
+									font-weight: normal;
+								}
+							}
+						}
+					}
+
+					.columnMedalContainerTop {
+						display: flex;
+						justify-content: space-around;
+						align-items: center;
+					}
+
+					.columnTitleContainer {
+						font-size: 0.78em;
+
+						.columnTitle {
+							margin: auto auto auto 30px;
+						}
+					}
+
+					.racerContainerDouble {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+
+					.racerContainerDoubleS {
+						margin-left: auto;
+						transform: translateX(calc(50% + 2px));
+						// width: 11vh;
+						// grid-column-start: 2;
+						// grid-column-end: 3;
+
+						.racer-wrapper {
+							width: 2.7777777777777777vh;
+							height: 2.7777777777777777vh;
+
+							&:nth-child(2) {
+								margin-left: 1.1111111111111112vh;
+							}
+
+							.racer {
+								font-size: 1.7592592592592593vh;
+							}
+						}
+					}
+
+					.dataContainerText1 {
+						// grid-column-start: 2;
+						// grid-column-end: 4;
+						margin-left: auto;
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+						font-size: 1.6666666666666667vh;
+						transform: translateX(calc(50% + 2px));
+					}
+
+					.columnNormal {
+						display: grid;
+						grid-template-columns: repeat(3, 33.3333333333%);
+						justify-items: center;
+						align-items: center;
+
+						.racerContainerDoubleX {
+							margin-left: auto;
+							transform: translateX(calc(50% + 2px));
+							// grid-column-start: 2;
+							// grid-column-end: 3;
+
+							.racer-wrapper {
+								width: 2.7777777777777777vh;
+								height: 2.7777777777777777vh;
+
+								&:nth-child(2) {
+									margin: 0 1.1111111111111112vh;
+								}
+
+								.racer {
+									font-size: 1.7592592592592593vh;
+								}
+							}
+						}
+
+						.racerOddsContainer {
+							// width: 65px;
+							margin-right: auto;
+							grid-column-start: 3;
+							grid-column-end: 4;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							transform: translateX(calc(-50% + 1px));
+						}
+
+						&:nth-child(9), &:nth-child(10) {
+							.racerOdds {
+								transform: translateX(calc(-50% + 2px))
+							}
+						}
+					}
+
+					.columnMedalContainerTriple {
+						height: 100%;
+						display: grid;
+						grid-template-columns: repeat(3, 33.3333333333%);
+
+						.racer-wrapper {
+							width: 2.7777777777777777vh;
+							height: 2.7777777777777777vh;
+
+							.racer {
+								font-size: 1.7592592592592593vh;
+							}
+						}
+
+						.racerOddsContainer {
+							justify-content: center;
+							align-items: center;
+							display: flex;
+						}
+
+						.columnMedalContainerTripleInternal {
+							display: flex;
+							flex: 1;
+							align-items: center;
+							justify-content: space-around;
+							padding: 0 3%;
+
+							&:nth-child(2) {
+								padding: 0;
+								border-left-width: 2px;
+								border-left-style: solid;
+								border-right-width: 2px;
+								border-right-style: solid;
+							}
+
+							.racerSubContainer {
+								width: 100%;
+								height: 100%;
+								display: flex;
+								justify-content: space-around;
+								align-items: center;
+							}
+
+							.racer-wrapper {
+								width: 2.7777777777777777vh;
+								height: 2.7777777777777777vh;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.racerOdds {
+			margin-right: auto;
+			grid-column-start: 3;
+			grid-column-end: 4;
+			font-size: 1.7592592592592593vh;
+			line-height: 1.7592592592592593vh;
+		}
+
+		.nextEventContainer {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.5740740740740742vh;
+		}
+
+		.bottomContainer {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.full .resultSection {
+		.dataSection {
+			width: 100%;
+			height: 100%;
+			height: calc(100vh - 5.555555556vh - 5.555555556vh);
+		}
+	}
+}
+
+$GAME_ICON_WIDTH: #{$HEADER_GAME_ICON_WIDTH - vw(5px)};
+.header-v2 {
+	.dataSection {
+		#header-v2 {
+			> .primary {
+				display: none;
+			}
+			> .secondary {
+				padding-left: vw(20px);
+				padding-bottom: 6px;
+				.left {
+					.game-details {
+						.primary {									
+							.game-icon-wrapper {
+								width: $GAME_ICON_WIDTH!important; 
+							}
+							.game-name {
+								margin-left: calc(#{$GAME_ICON_WIDTH} + #{vw(18px)});
+							}
+							.channel-name {
+								margin-left: vw(17px);
+							}
+						}
+						.secondary {
+							.event-name {
+								margin-left: calc(#{$GAME_ICON_WIDTH} + #{vw(18px)});
+							}
+						}
+					}
+					.event-details {
+						margin-right: vw(20px);
+					}
+				}
+			}
+		}
+		.internalContainer {
+			height: 828px;
+			height: 76.66666666666667vh;
+		}
+	}
+}
+
+
+
+///////// 
+@import "ResultPage.options";

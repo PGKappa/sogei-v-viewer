@@ -1,0 +1,15 @@
+.gui-mode-dark.page-secondary {
+    #quinella-table-odds {
+        border-color: $COLOR__DARK__BORDER_PAGE_ODDS;
+    }
+
+    #boxedtrifecta-table-odds {
+        border-color: $COLOR__DARK__BORDER_PAGE_ODDS;
+
+        .boxedtrifecta-table-content {
+            .boxedtrifecta-table-column {
+                border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.full {
+  .header-countdown-v2 {
+    .timer-container {
+      .timer-digits {
+        color: $COLOR__HEADER_COUNTDOWN_TEXT;
+      }
+    }
+
+    .progress {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #2f6188;
+      background-image: linear-gradient(to right, hsl(210, 35%, 40%,), hsl(205, 90%, 97%));
+
+      .bar-item {
+        border-left: 1px solid #2f6188;
+        background-color: transparent;
+
+        &.empty {
+          background-color: #999999;
+        }
+      }
+    }
+  }
+}

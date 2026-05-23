@@ -1,0 +1,29 @@
+
+.gui-mode-dark {
+	#exacta-table-odds {
+
+		// border top
+		border-color: $COLOR__BORDER_PAGE_ODDS;
+		
+		.content {
+			.exacta-table-column {
+				border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+	
+				.exacta-table-entry {
+					&:nth-child(odd) {
+						background-color: $COLOR__DARK__TABLE_ROW_ODD; //rgba(255, 255, 255, 0.85);
+					}
+	
+					&:nth-child(even) {
+						background-color: $COLOR__DARK__TABLE_ROW_EVEN; //rgba(229, 229, 229, 0.85);
+					}
+	
+					.exacta-table-odds {
+						color: $COLOR__DARK__TABLE_ROW_TEXT;
+					}
+	
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@import "../styles/utils.scss";
+
+.full .footer.v2, .footer.v2 {
+    padding-left: vw(25px);    
+    display: flex;
+    .legend {
+        width: unset;
+        display: flex;
+        .min-odds, .max-odds {
+            justify-content: flex-start;
+            width: unset;
+            .color {
+                width: vw(75px);
+            }
+            .text {
+                margin-left: vw(20px);
+                @include fluid-type(320px, 1920px, 12px, 24px);
+            }
+        }
+        .min-odds  {
+            padding-right: 0px;
+        }
+        .max-odds  {
+            margin-left: vw(40px);
+        }
+    }
+    .scrolling-text-container {
+        margin-left: vw(20px);
+        font-size: 2.5vh;
+        line-height: 2.5vh;
+    }
+}

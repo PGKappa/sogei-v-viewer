@@ -1,0 +1,29 @@
+version:          '3'
+
+services:
+  v-viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    # image:        node:17-alpine
+    command:      sh -c "yarn install && yarn dev:draw:${game_id}"
+    # command: tail -F anything
+    environment:
+      - game_id=${game_id}
+      - GAME_ID=${GAME_ID}
+      - V_VIEWER_INDEX_TEMPLATE=index.template.devdraw.js
+      - V_VIEWER_${GAME_ID}_PARTNER=stanleybet
+      - V_VIEWER_${GAME_ID}_API_ENDPOINT=""
+      - PORT=8090
+    ports:
+      - '8090:8090'
+      # - '9900:9900'
+      # - '9933:9933'
+    working_dir:  /root/v-viewer
+    volumes:
+      - ../:/root/v-viewer:cached
+    networks:
+      - frontend    
+
+networks:
+  frontend:

@@ -1,0 +1,158 @@
+@import "../styles/utils";
+
+.latecomers-table {
+	display: flex;
+	font-weight: bold;
+	flex-direction: column;
+	border-top-width: 1.296296296296296vh;
+	border-top-style: solid;
+	min-height: 27.962962962962962vh;
+	max-height: 27.962962962962962vh;
+
+	.latecomers-table-title-bar {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.latecomers-table-column-titles {
+		width: 100%;
+		display: flex;
+
+		.column-title {
+			height: 100%;
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.6666666666666667vh;
+			line-height: 1.6666666666666667vh;
+		}
+	}
+
+	.latecomers-table-internal {
+		width: 100%;
+		display: flex;
+
+		.latecomers-table-column {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			font-size: 1.7vh;
+
+			.row-title {
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 1.3888888888888888vh;
+			}
+
+			.delay-container,
+			.racer-container {
+				padding-left: vw(11px);
+				display: flex;
+				align-items: center;
+			}
+
+			.racer-container {
+				margin-left: 1px;
+				margin-right: 2px;
+			}
+
+			.delay-container {
+				padding-left: 0;
+				justify-content: center;
+				font-size: 1.8518518518518519vh;
+			}
+
+			.racer-container .racer {
+				margin-right: vw(10px);
+			}
+		}
+	}
+}
+
+.full {
+	.right {
+		.latecomers-table {
+			height: 100%;
+
+			.header {
+				.latecomers-table-title-bar {
+					height: vh(50px);
+				}
+
+				.latecomers-table-column-titles {
+					font-size: 1.7vh;
+					height: vh(50px);
+				}
+			}
+
+			.latecomers-table-internal {
+				height: 100%;
+
+				.latecomers-table-column {
+					height: 100%;
+					font-size: 1.7vh;
+					border-left-width: 1px;
+					border-left-style: solid;
+					border-right-width: 1px;
+					border-right-style: solid;
+
+
+					.delay-container,
+					.racer-container,
+					.row-title {
+						height: auto;
+						flex: 1;
+					}
+
+					.racer-container {
+						width: auto;
+						padding: 0 6%;
+						margin: 0;
+						/*
+						border-left-width: 2px;
+						border-left-style: solid;
+						border-right-width: 2px;
+						border-right-style: solid;
+						*/
+
+						.racer-internal {
+							width: 100%;
+							display: grid;
+							justify-items: center;
+							grid-template-columns: repeat(3, 1fr);
+
+							.racer-wrapper {
+								width: 2.7777777777777777vh;
+								height: 2.7777777777777777vh;
+
+								.racer {
+									margin: 0;
+									font-size: 1.7592592592592593vh;
+									line-height: 1.7592592592592593vh;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 633px) {
+	.latecomers-table .latecomers-table-title-bar {
+		font-size: 2.2222222222222223vh;
+	}
+
+	.latecomers-table .latecomers-table-internal .latecomers-table-column .row-title {
+		font-size: 1.6666666666666667vh;
+	}
+
+	.latecomers-table .latecomers-table-internal .latecomers-table-column .delay-container {
+		font-size: 2.037037037037037vh;
+	}
+}

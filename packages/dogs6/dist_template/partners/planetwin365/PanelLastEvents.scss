@@ -1,0 +1,49 @@
+.full .last-events-table {
+	.header {
+		.primary {
+			background-color: $COLOR__RIGHT_PANEL_HEADER_PRIMARY;
+			color: $COLOR__RIGHT_PANEL_HEADER_PRIMARY_TEXT;
+		}
+
+		.secondary {
+			.titlebar {
+				color: $COLOR__TABLE_HEADER_TEXT;
+
+				&:nth-of-type(odd) {
+					background-color: $COLOR__TABLE_HEADER_ODD;
+				}
+
+				&:nth-of-type(even) {
+					background-color: $COLOR__TABLE_HEADER_EVEN;
+				}
+			}
+		}
+	}
+
+	.content {
+		color: $COLOR__TABLE_ROW_TEXT;
+		.column {
+			border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+
+			&:first-of-type {
+				border-left-width: 2px;
+			}
+			&:last-of-type {
+				border-right-width: 2px;
+			}
+
+
+			.row {
+				&:nth-child(odd) {
+					background-color: $COLOR__TABLE_ROW_ODD;
+				}
+
+				&:nth-child(even) {
+					background-color: $COLOR__TABLE_ROW_EVEN;
+				}
+			}
+		}
+	}
+}

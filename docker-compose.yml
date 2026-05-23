@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  pvg-viewer:
+    image: pwr-viewer:latest
+    container_name: pwr-viewer
+
+    networks:
+      - pvgviewer_net
+    ports:
+      - "8091:80"
+
+networks:
+  pvgviewer_net:
+    driver: bridge

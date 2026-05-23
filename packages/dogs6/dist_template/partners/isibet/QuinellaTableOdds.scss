@@ -1,0 +1,59 @@
+.quinella-div {
+	border-color: $COLOR__BORDER_PAGE_ODDS_NOT_FULL;
+	border-width: calc(max(#{$PAGE_ODDS_INTERNAL_BORDER_WIDTH}, #{$PAGE_ODDS_INTERNAL_BORDER_MIN_WIDTH})) !important;
+
+	.quinella-table-title {
+		color: $COLOR__TABLE_HEADER_TEXT;
+	}
+}
+
+#quinella-table-odds {
+
+	.quinella-table-content {
+		.quinella-table-column {
+			border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+			border-bottom-width: 2px !important;
+			border-bottom-style: solid !important;
+
+			&:first-of-type {
+				border-left-width: 2px !important;
+				border-left-style: solid !important;
+			}
+
+			&:last-of-type {
+				border-right-width: 2px !important;
+				border-right-style: solid !important;
+			}
+
+			.quinella-table-entry {
+				&:nth-child(odd) {
+					background-color: $COLOR__TABLE_ROW_ODD;
+				}
+
+				&:nth-child(even) {
+					background-color: $COLOR__TABLE_ROW_EVEN;
+				}
+
+				.quinella-table-odds {
+					color: $COLOR__TABLE_ROW_TEXT;
+					
+					&.min {
+						color: $COLOR__TABLE_MIN_ODDS_TEXT;
+					}
+
+					&.max {
+						color: $COLOR__TABLE_MAX_ODDS_TEXT;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+.full {
+	.quinella-div {
+		border-color: $COLOR__BORDER_PAGE_ODDS;
+	}
+}

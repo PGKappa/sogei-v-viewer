@@ -1,0 +1,217 @@
+@import "../styles/utils";
+
+$START_BOTTOM: -18.51851851851852vh;
+$END_BOTTOM: 3.5185185185185186vh;
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    bottom: $START_BOTTOM;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: $END_BOTTOM;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+    bottom: $START_BOTTOM;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: $END_BOTTOM;
+  }
+}
+
+
+$PANEL_HEIGHT: 10vh;
+
+.track-animation {
+  position: absolute;
+  width: 89.58333333333333vw;
+  height: $PANEL_HEIGHT;
+  display: none;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  flex-direction: column;
+  transition-duration: .08s;
+  transition-timing-function: linear;
+  z-index: 1;
+  //bottom: 3.5185185185185186vh;
+
+  &:not(.hidden) {
+    animation: 5s ease 1s normal forwards 1 fadein !important;
+    display: flex;
+  }
+
+  .track-animation-primary {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    border-right-width: 5px;
+    border-right-style: solid;
+    overflow-x: hidden;
+
+    .racerContainer {
+      width: calc(100% / 6);
+      min-width: calc(100% / 6);
+      height: 100%;
+      display: inline-grid;
+      flex: 1;
+      grid-template-columns: 5vh 0 auto;
+      border-left-width: 5px;
+      border-left-style: solid;
+      position: relative;
+
+      .racerPosition {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        //width: 5vh;
+        font-size: 2.1vh;
+        line-height: 2.1vh;
+      }
+
+      .racerActualContainer {
+        position: relative;
+        display: grid;
+        width: 100%;
+        transform: translateX(0px);
+        transition-duration: .25s;
+        transition-timing-function: ease-out;
+
+        .racerActual {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          background-color: rgba(255, 255, 255, 0.8);
+          transition-duration: .25s;
+          transition-timing-function: ease-out;
+
+          .racer-wrapper {
+            width: 3.7037037037037037vh;
+            height: 3.7037037037037037vh;
+            margin: 0 10px 0 12px;
+
+            .racer {
+              font-size: 2.314814814814815vh !important;
+              font-weight: bold;
+            }
+          }
+
+          .racerTextContainer {
+            padding: 1px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1.8vh;
+            line-height: 1.8vh;
+            font-weight: bold;
+
+            .position {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .track-animation-secondary {
+    height: 50%;
+    display: grid;
+    grid-template-columns: 11% 89%;
+    grid-template-rows: 100%;
+    position: relative;
+    overflow-x: hidden;
+
+    .oddsTitle {
+      width: 100%;
+      height: 100%;
+      font-size: 2.2vh;
+      line-height: 2.2vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .textContainer {
+      width: 100%;
+      display: flex;
+
+      .panelBottomOddsContainer {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        font-size: .8em;
+        //line-height: .8em;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+
+        .bottomRacersContainer {
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          .racer-wrapper {
+            width: 2.7777777777777777vh;
+            height: 2.7777777777777777vh;
+
+            &:nth-child(2) {
+              margin-left: 0.26041666666666663vw;
+              margin-right: 0.26041666666666663vw;
+            }
+
+            &:nth-child(3) {
+              margin-right: 0.3125vw;
+            }
+          }
+        }
+
+        .marketTitle {
+          margin-right: 0.5208333333333333vw;
+          font-size: 2vh;
+        }
+
+        .marketOdds {
+          margin-left: 0.26041666666666663vw;
+          font-size: 2vh;
+
+          &nth:child(1) {
+            margin-left: 0;
+          }
+        }
+
+        .marketTitleDash {
+          margin: auto 0.78125vw auto 0.5729166666666666vw;
+          font-size: .72em;
+        }
+
+        .finalOdds {
+          display: flex;
+          align-items: center;
+
+          .marketTitleDash {
+            margin: 0 0.78125vw 0 0.625vw;
+          }
+
+          .marketTitle {
+            margin-right: 1px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="PGVirtual"
+    />
+    <title>PGVirtual</title>
+    <link rel="stylesheet" href="lib/fonts.css">
+
+    <script src="lib/hls.min.js"></script>
+  </head>
+  <body class="">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="app-container">
+      <div id="page-container">
+        <div id="page-main"></div>
+        <div id="page-secondary"></div>
+        <div id="page-trifecta"></div>
+        <div id="page-video"></div>
+        <div id="page-results"></div>
+        <div id="page-error"></div>
+      </div>
+      <div id="footer-container"></div>
+    </div>
+    <script> 
+      var v_param__full = 1,
+      v_param__show_partner_logo = 1;
+      var endpoint = <%= htmlWebpackPlugin.options.apiEndpoint %>;
+      
+      <%= htmlWebpackPlugin.options.vars %>
+    </script>
+    <script src="<%= htmlWebpackPlugin.options.mainScript %>"></script>
+  </body>
+</html>
+

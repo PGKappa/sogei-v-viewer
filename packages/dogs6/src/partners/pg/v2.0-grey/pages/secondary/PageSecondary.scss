@@ -1,0 +1,13 @@
+.page-secondary {
+	#quinella-table-odds {
+		border-color: $COLOR__BORDER_PAGE_ODDS;
+		border-top-width: calc(max(#{$PAGE_ODDS_INTERNAL_BORDER_WIDTH}, #{$PAGE_ODDS_INTERNAL_BORDER_MIN_WIDTH})) !important;
+		border-top-style: solid;
+	}
+
+	#boxedtrifecta-table-odds {
+		border-color: $COLOR__BORDER_PAGE_ODDS;
+		border-width: calc(max(#{$PAGE_ODDS_INTERNAL_BORDER_WIDTH}, #{$PAGE_ODDS_INTERNAL_BORDER_MIN_WIDTH})) !important;
+		border-top-style: solid;
+	}
+}

@@ -1,0 +1,10 @@
+FROM node:17-alpine
+
+RUN apk add curl
+
+RUN curl --compressed -o- -L https://yarnpkg.com/install.sh | sh
+
+RUN apk add --no-cache git 
+
+RUN apk --no-cache add --virtual native-deps \
+    g++ gcc libgcc libstdc++ linux-headers make python2

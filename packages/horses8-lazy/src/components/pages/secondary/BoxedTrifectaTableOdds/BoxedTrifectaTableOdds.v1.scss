@@ -1,0 +1,224 @@
+// @import "../../../components/styles/utils.scss";
+
+@function vw($px-vw, $base-vw: 1920px) {
+	@return ($px-vw * 100vw) / $base-vw;
+}
+
+@function vh($px-vh, $base-vh: 1080px) {
+	@return ($px-vh * 100vh) / $base-vh;
+}
+
+	.boxedtrifecta-table-title {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: vh(50px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 25px;
+		font-weight: bold;
+		z-index: 1;
+	}
+
+	#boxedtrifecta-table-odds {
+		display: flex;
+		flex: 5;
+		flex-direction: column;
+		box-sizing: content-box;
+
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.boxedtrifecta-table-title-bar {
+			position: relative;
+			width: 100%;
+		}
+
+		.boxedtrifecta-table-content {
+			background: transparent;
+			overflow: hidden;
+			flex-direction: column;
+			border-bottom-width: 2px;
+			border-bottom-style: solid;
+			border-bottom-color: #cfcfcf;
+
+			.boxedtrifecta-table-content-1,
+			.boxedtrifecta-table-content-2 {
+				width: 100%;
+				flex: 1;
+				display: flex;
+				min-height: 100.5%;
+				height: 100.5%;
+				border-bottom-width: 4px;
+				
+
+			.boxedtrifecta-table-column {
+				width: 25%;
+				flex: 1;
+				height: 228px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				border-left-width: 2px;
+				border-left-style: solid;
+
+				.boxedtrifecta-table-entry {
+					padding: 0 1.3888888888888888vh;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-weight: bold;
+
+					.boxedtrifecta-table-num-container {
+						margin: auto auto auto 0;
+						display: grid;
+						display: flex;
+						grid-template-columns: auto auto;
+						grid-column-gap: 0.5555555555555556vh;
+						align-items: center;
+
+						.racer-wrapper {
+							width: 3.0555555555555554vh;
+							height: 3.0555555555555554vh;
+
+							.racer {
+								font-size: 2.2vh;
+								line-height: 1.9vh;
+							}
+						}
+					}
+
+					.boxedtrifecta-table-odds {
+						margin: 0;
+						font-size: 2.4074074074074074vh;
+						line-height: 2.4074074074074074vh;
+					}
+				}
+			}
+		}
+	}
+}
+
+.boxedtrifecta-table-content-1,
+.boxedtrifecta-table-content-2 {
+
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	//animation-duration: 24s;
+	animation-duration: 30s;
+}
+
+.boxedtrifecta-table-content-1 {
+	animation-name: verticalScrolla;
+	//animation-delay: -12s;
+	animation-delay: -15s;
+}
+
+.boxedtrifecta-table-content-2 {
+	animation-name: verticalScrollb;
+}
+
+
+@keyframes verticalScrolla {
+	0% {
+		transform: translateY(100%);
+	}
+
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes verticalScrollb {
+	0% {
+		transform: translateY(0%);
+	}
+
+	100% {
+		transform: translateY(-200%);
+	}
+}
+@media only screen and (min-width: 320px) {
+	#boxedtrifecta-table-odds {
+		height: 100%;
+
+		.boxedtrifecta-table-content {
+			width: 100%;
+			display: flex;
+
+			.boxedtrifecta-table-column {
+				flex: 1;
+				height: 100% !important;
+				display: flex;
+				flex-direction: column;
+				justify-content: initial;
+
+				.boxedtrifecta-table-entry {
+					height: 100% !important;
+
+					.boxedtrifecta-table-num-container {
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 360px) {
+	.boxedtrifecta-div {
+		width: 100%;
+		flex: 1;
+		display: flex;
+
+		.boxedtrifecta-table-title {
+			height: 4.5vh;
+		}
+
+		#boxedtrifecta-table-odds {
+			height: 100%;
+			width: 100%;
+			display: grid;
+			grid-template-rows: 4.5vh repeat(5, 1fr);
+
+			.boxedtrifecta-table-title-bar {
+				height: 100%;
+			}
+
+			.boxedtrifecta-table-content {
+				height: 100% !important;
+				grid-row-start: 2;
+				grid-row-end: 7;
+				display: grid;
+				grid-template-columns: 20% 20% 20% 20% 20%;
+
+				.boxedtrifecta-table-column {
+					width: 100%;
+					height: 100% !important;
+					display: grid !important;
+					grid-template-rows: 20% 20% 20% 20% 20%;
+					justify-content: initial;
+
+					.boxedtrifecta-table-entry {
+						height: 100% !important;
+						padding: 0 10%;
+
+						.boxedtrifecta-table-num-container {
+							height: 100%;
+							grid-column-gap: 1.5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 633px) {
+	.boxedtrifecta-table-content .boxedtrifecta-table-column .boxedtrifecta-table-entry .boxedtrifecta-table-odds {
+		font-size: 2.4074074074074074vh;
+	}
+}

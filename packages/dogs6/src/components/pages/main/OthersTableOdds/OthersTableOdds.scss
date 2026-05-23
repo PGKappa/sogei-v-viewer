@@ -1,0 +1,116 @@
+#others-table-odds {	
+	height: 100%;
+	width: calc(100% / 6);
+	font-weight: bold;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	box-sizing: content-box;
+	position: absolute;
+	right: 0px;
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.others-table-content {
+		position: relative;
+		height: 100%;
+		border-left-width: 1px;
+		border-left-style: solid;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+
+		.others-table-content-1, .others-table-content-2 {
+			min-height: 100.5%;
+			height: 100.5%;
+
+			.others-panel-content-item {
+				width: 100%;
+				height: 25%;
+				min-height: 25%;
+				display: flex;
+				align-items: center;
+
+				.others-panel-content-item-title {
+					margin: auto auto auto 10%;
+					font-size: 1.6666666666666667vh;
+					line-height: 1.6666666666666667vh;
+				}
+
+				.others-panel-content-item-odds {
+					margin: auto 10% auto auto;
+					font-size: 1.9444444444444444vh;
+					line-height: 1.9444444444444444vh;
+				}
+			}
+		}
+	}
+}
+
+.others-table-content-1, .others-table-content-2 {
+
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 10s;
+}
+
+.others-table-content-1 {
+	animation-name: verticalScrolla;
+	animation-delay: -5s;
+}
+
+.others-table-content-2 {
+	animation-name: verticalScrollb;
+}
+
+
+@keyframes verticalScrolla {
+	0% {transform: translateY(100%);}
+	100% {transform: translateY(-100%);}
+}
+
+@keyframes verticalScrollb {
+	0% {transform: translateY(0%);}
+	100% {transform: translateY(-200%);}
+}
+
+@media only screen and (max-height: 540px) {
+	.others-table-content-1, .others-table-content-2 {
+		animation-duration: 5s;
+	}
+
+	.others-table-content-1 {
+		animation-name: verticalScrolla;
+		animation-delay: -2.5s;
+	}
+}
+
+@media only screen and (min-height: 633px) {
+	#others-table-odds .others-table-content
+	.others-table-content-1
+	.others-panel-content-item
+	.others-panel-content-item-title,
+	#others-table-odds
+	.others-table-content
+	.others-table-content-2
+	.others-panel-content-item
+	.others-panel-content-item-title {
+		font-size: 2.2222222222222223vh;
+	}
+
+	#others-table-odds
+	.others-table-content
+	.others-table-content-1
+	.others-panel-content-item
+	.others-panel-content-item-odds,
+	#others-table-odds
+	.others-table-content
+	.others-table-content-2
+	.others-panel-content-item
+	.others-panel-content-item-odds {
+		font-size: 2.4074074074074074vh;
+	}
+}

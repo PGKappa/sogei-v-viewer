@@ -1,0 +1,8 @@
+{
+    "name": "@v-viewer/horses6-lazy",
+    "version": "2.0.1",
+    "private": true,
+    "dependencies": {
+        "@v-viewer/core": "^4.0.35"
+    }
+}

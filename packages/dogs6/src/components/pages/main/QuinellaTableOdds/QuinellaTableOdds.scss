@@ -1,0 +1,167 @@
+@import "../../../styles/utils.scss";
+.quinella-div {
+	position: relative;
+	border-top-width: 1.296296296296296vh;
+	border-top-style: solid;
+	box-sizing: border-box;
+	overflow: hidden;
+	min-height: 30%;
+
+
+	#quinella-table-odds {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		box-sizing: content-box;
+		box-sizing: border-box;
+		.titlebar {
+			//padding-left: calc(100% / 10);
+			> span:first-of-type {
+				margin-left: calc(100% / 5);		
+			}	
+		}
+
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.quinella-table-title-bar {
+			position: relative;
+			width: 100%;
+		}
+
+		.quinella-table-content {
+			display: flex;
+			background: transparent;
+			//display: none;
+			flex: 1;
+
+			.quinella-table-column {
+				width: 25%;
+				flex: 1;
+				height: vw(228px);
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				border-left-width: 2px;
+				border-left-style: solid;
+
+				.quinella-table-entry {
+					padding: 0 vw(20px);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-weight: bold;
+
+					.quinella-table-num-container {
+						margin: auto auto auto 0;
+						display: grid;
+						grid-template-columns: auto auto;
+						grid-column-gap: 0.5555555555555556vh;
+						align-items: center;
+
+						.racer-wrapper {
+							width: 3.0555555555555554vh;
+							height: 3.0555555555555554vh;
+
+							.racer {
+								font-size: 2.2vh;
+								line-height: 1.9vh;
+							}
+						}
+					}
+
+					.quinella-table-odds {
+						margin: 0;
+						font-size: 2.4074074074074074vh;
+						line-height: 2.4074074074074074vh;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 320px) {
+	#quinella-table-odds {
+		height: 100%;
+
+		.quinella-table-content {
+			width: 100%;
+			display: flex;
+
+			.quinella-table-column {
+				flex: 1;
+				height: 100% !important;
+				display: flex;
+				flex-direction: column;
+				justify-content: initial;
+
+				.quinella-table-entry {
+					height: 100% !important;
+
+					.quinella-table-num-container {
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.quinella-div {
+		width: 100%;
+		flex: 1;
+		display: flex;
+
+		.quinella-table-title {
+			height: 4.5vh;
+		}
+
+		#quinella-table-odds {
+			height: 100%;
+			width: 100%;
+			display: grid;
+			grid-template-rows: 4.5vh repeat(5, 1fr);
+
+			.quinella-table-title-bar {
+				height: 100%;
+			}
+
+			.quinella-table-content {
+				height: 100% !important;
+				grid-row-start: 2;
+				grid-row-end: 7;
+				display: grid;
+				grid-template-columns: 20% 20% 20% 20% 20%;
+
+				.quinella-table-column {
+					width: 100%;
+					height: 100% !important;
+					display: grid !important;
+					grid-template-rows: 20% 20% 20% 20% 20%;
+					justify-content: initial;
+
+					.quinella-table-entry {
+						height: 100% !important;
+						padding: 0 10%;
+
+						.quinella-table-num-container {
+							height: 100%;
+							grid-column-gap: 1.5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 633px) {
+	.quinella-table-content .quinella-table-column .quinella-table-entry .quinella-table-odds {
+		font-size: 2.4074074074074074vh;
+	}
+}

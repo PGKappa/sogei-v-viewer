@@ -1,0 +1,39 @@
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+//Using this mixin
+%flexbox { @include flexbox; }
+
+
+@mixin animation ($delay, $duration, $animation, $timing-function:linear, $direction: normal, $fillmode: forwards) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: $fillmode;
+    -webkit-animation-direction: $direction;
+    -webkit-animation-timing-function: $timing-function;
+    -webkit-animation-iteration-count: $iteration-count;
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: $fillmode;
+    -moz-animation-direction: $direction;
+    -moz-animation-timing-function: $timing-function;
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: $fillmode;
+    animation-direction: $direction;
+    animation-timing-function: $timing-function;
+    animation-iteration-count: $iteration-count;
+
+    //-ms-animation: color_change 3s infinite alternate;
+//			-o-animation: color_change 3s infinite alternate;
+}

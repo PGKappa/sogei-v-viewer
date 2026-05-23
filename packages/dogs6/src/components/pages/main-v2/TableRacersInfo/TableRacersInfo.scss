@@ -1,0 +1,32 @@
+.table-racers-info {
+    .main-table-column-v2 {
+        border-left-style: solid;
+        border-right-style: solid;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        &:first-of-type {
+            border-left-width: 0;
+    }
+
+    &:last-of-type {
+        border-right-width: 0;			
+    }
+    }
+    .table-racers-info-column-names {
+        flex: 1;
+    }
+
+    .performance-inner-container .performance-container {
+        width: 80%;
+
+    }
+    
+    .row  {
+        height: 50px;
+
+        min-height: calc(100% / 6);
+        max-height: calc(100% / 6);
+        height: calc(100% / 6);
+        flex: unset;
+    }
+}

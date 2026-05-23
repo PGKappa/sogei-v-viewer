@@ -1,0 +1,43 @@
+.main-table-v2 {
+    border-color: $COLOR__BORDER_PAGE_ODDS;
+
+    .main-table-column-v2 {
+        border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+
+        &.direction-row {
+            .content {
+                .row {
+                    &:nth-child(even) {
+                        background-color:$COLOR__TABLE_ROW_ODD;
+                    }
+                }
+            }
+        }
+
+        .content {
+            .row {
+                border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+                color: $COLOR__TABLE_ROW_TEXT;
+
+                &:nth-child(odd) {
+                    background-color:$COLOR__TABLE_ROW_ODD;
+                    
+                }
+
+                &:nth-child(even) {                    
+                    background-color: $COLOR__TABLE_ROW_EVEN;
+                }
+                
+            }
+
+            .history-row-container {
+                .result-container {
+                    border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+                }
+            }
+
+
+        }
+
+    }
+}

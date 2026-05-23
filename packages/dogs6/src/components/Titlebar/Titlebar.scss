@@ -1,0 +1,17 @@
+@import "../styles/typography";
+@import "../styles/utils";
+
+.titlebar {
+  height: vh(50px);
+  min-height: vh(50px);
+  max-height: vh(50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include fluid-type(320px, 1920px, 8px, 26px);
+  line-height: vh(25px);
+  font-weight: bold;
+  > span:not(:first-child) {
+    margin-left: 4px;
+  }
+}

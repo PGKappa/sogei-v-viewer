@@ -1,0 +1,63 @@
+@import "../../../../components/styles/typography.scss";
+@import "../../../../components/styles/utils.scss";
+
+.header-countdown-v2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+
+    .timer-container {
+        position: relative;
+        min-width: vw(70px);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+
+        .timer-digits {
+            position: absolute;
+            left: 0px;
+            padding-left: vw(25px);
+            padding-right: vw(35px);
+            top: 50%;       
+            transform: translate(0%, -50%);            
+            @include fluid-type(320px, 1920px, 20px, 46px);
+        }
+    }
+
+    .progress {
+        display: none;
+    }
+}
+
+.full {
+    .header-countdown-v2 {             
+
+        .timer-container {
+            min-width: vw(153px);   
+            .timer-digits {
+                @include fluid-type(320px, 1920px, 20px, 46px);
+                //left: 0;
+                //top: 50%;
+                //transform: translate(0%, -50%);
+                padding-right: 0px;
+                padding-left: vw(35px);
+            }
+        }
+
+        .progress {
+            height: 4.444444444444445vh;
+            margin: 0;            
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            min-width: vw(290px);
+
+            .bar-item {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

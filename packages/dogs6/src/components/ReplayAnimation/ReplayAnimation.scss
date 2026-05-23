@@ -1,0 +1,102 @@
+@import "../styles/typography";
+@import "../styles/utils";
+
+.replayOuterContainer {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+
+	//.replayResultsContainer {
+		width: 72vh;
+		height: 24vh;
+		display: grid;
+		grid-template-rows: 5vh auto;
+		border-top-width: 4px;
+		border-bottom-width: 4px;
+		border-left-width: 2px;
+		border-right-width: 2px;
+		border-style: solid;
+		z-index: 10;
+
+		.replayResultsHeader {
+			height: 100%;
+			max-height: vh(60px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			//font-size: 1.8vh;
+			font-weight: bold;
+		}
+
+		.replayResultsMain {
+			width: 100%;
+			height: 100%;
+			padding: 0 10px;
+			display: grid;
+			//background-color: rgba(255, 255, 255, 0.7);
+			grid-template-columns: repeat(3, 1fr);
+			justify-items: center;
+
+			.replayResultContainer {
+				display: flex;
+				justify-content: center;
+
+				.replayRacerContainer {
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					.racerData {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+
+						.racer-wrapper {
+							width: 9.25925925925926vh;
+							height: 9.25925925925926vh;
+
+							.racer {
+								font-size: 5vh;
+								font-weight: bold;
+							}
+						}
+
+						.racerName {
+							margin-top: 0.7407407407407407vh;
+							font-size: 1.5vh;
+							font-weight: bold;
+							letter-spacing: .5px;
+						}
+					}
+
+					.medalContainer {
+						position: absolute;
+						left: 0;
+						top: 50%;
+						width: 6.388888888888889vh;
+    					height: 8.88888888888889vh;
+						transform: translate(-69%, -80%);
+
+						.medal {
+							height: 8vh;
+						}
+
+						.medaltext {
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translate(-50%, -90%);
+							font-weight: bold;
+							@include fluid-type(320px, 1920px, 8px, 26px);
+							background-color: rgba(255, 255, 255, .15);
+							box-shadow: 0 0 6px 3px rgba(255, 255, 255, .15);
+						}
+					}
+				}
+			}
+		}
+	//}
+}

@@ -1,0 +1,198 @@
+@import "../../../styles/cross-browser.scss";
+.page-main {
+
+}
+.quinella-div {
+
+	#boxedtrifecta-table-odds {
+
+		@extend %flexbox;
+		//width: calc(100% / 6 * 5);
+		width: 100%;
+		flex-direction: column;
+		box-sizing: content-box;
+		//animation-name: slideBoxedTrifecta;
+		// animation-timing-function: linear;
+		// animation-iteration-count: infinite;
+		// animation-duration: 10s;
+		//opacity: 0;
+		position: absolute;
+		top: 0;
+		//width: 100%;
+		height: 100%;
+		@extend %flexbox;
+		// transform: translateX(100%);
+		.titlebar {
+			> span:first-of-type {
+				margin-left: calc(100% / 5);		
+			}			
+		}
+		
+
+		@keyframes slideBoxedTrifecta {
+			0% {
+				transform: translateX(100%);
+				opacity: 1;
+			}
+	
+			15% {
+				transform: translateX(100%);
+			}
+	
+			50% {
+				transform: translateX(0%);
+			}
+	
+			85% {
+				transform: translateX(0%);
+			}
+	
+			100% {
+				transform: translateX(-100%);
+				opacity: 1;
+			}
+		}
+
+
+		.wrapper {
+			@extend %flexbox;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.boxedtrifecta-table-title-bar {
+			position: relative;
+			width: 100%;
+		}
+
+		.boxedtrifecta-table-content {
+			@extend %flexbox;
+			background: transparent;
+			//display: none;
+			flex: 1;
+
+			.boxedtrifecta-table-column {
+				width: 25%;
+				flex: 1;
+				height: 228px;
+				@extend %flexbox;
+				flex-direction: column;
+				justify-content: flex-end;
+				border-left-width: 2px;
+				border-left-style: solid;
+
+				.boxedtrifecta-table-entry {
+					padding: 0 1.3888888888888888vh;
+					@extend %flexbox;
+					align-items: center;
+					justify-content: center;
+					font-weight: bold;
+
+					.boxedtrifecta-table-num-container {
+						margin: auto auto auto 0;
+						//display: grid;
+						@extend %flexbox;
+						grid-template-columns: auto auto;
+						grid-column-gap: 0.5555555555555556vh;
+						align-items: center;
+
+						.racer-wrapper {
+							width: 3.0555555555555554vh;
+							height: 3.0555555555555554vh;
+
+							.racer {
+								font-size: 2.2vh;
+								line-height: 1.9vh;
+							}
+						}
+					}
+
+					.boxedtrifecta-table-odds {
+						margin: 0;
+						font-size: 2.4074074074074074vh;
+						line-height: 2.4074074074074074vh;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 320px) {
+	#boxedtrifecta-table-odds {
+		height: 100%;
+
+		.boxedtrifecta-table-content {
+			width: 100%;
+			display: flex;
+
+			.boxedtrifecta-table-column {
+				flex: 1;
+				height: 100% !important;
+				display: flex;
+				flex-direction: column;
+				justify-content: initial;
+
+				.boxedtrifecta-table-entry {
+					height: 100% !important;
+
+					.boxedtrifecta-table-num-container {
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 360px) {
+	.boxedtrifecta-div {
+		width: 100%;
+		flex: 1;
+		display: flex;
+
+		.boxedtrifecta-table-title {
+			height: 4.5vh;
+		}
+
+		#boxedtrifecta-table-odds {
+			height: 100%;
+			width: 100%;
+			display: grid;
+			grid-template-rows: 4.5vh repeat(5, 1fr);
+
+			.boxedtrifecta-table-title-bar {
+				height: 100%;
+			}
+
+			.boxedtrifecta-table-content {
+				height: 100% !important;
+				grid-row-start: 2;
+				grid-row-end: 7;
+				display: grid;
+				grid-template-columns: 20% 20% 20% 20% 20%;
+
+				.boxedtrifecta-table-column {
+					width: 100%;
+					height: 100% !important;
+					display: grid !important;
+					grid-template-rows: 20% 20% 20% 20% 20%;
+					justify-content: initial;
+
+					.boxedtrifecta-table-entry {
+						height: 100% !important;
+						padding: 0 10%;
+
+						.boxedtrifecta-table-num-container {
+							height: 100%;
+							grid-column-gap: 1.5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 633px) {
+	.boxedtrifecta-table-content .boxedtrifecta-table-column .boxedtrifecta-table-entry .boxedtrifecta-table-odds {
+		font-size: 2.4074074074074074vh;
+	}
+}

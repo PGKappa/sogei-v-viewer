@@ -1,0 +1,36 @@
+#exacta-table-odds {
+
+	// border top
+	border-color: $COLOR__BORDER_PAGE_ODDS;
+	border-width: $PAGE_ODDS_INTERNAL_BORDER_WIDTH !important;
+	border-width: calc(max(#{$PAGE_ODDS_INTERNAL_BORDER_WIDTH}, #{$PAGE_ODDS_INTERNAL_BORDER_MIN_WIDTH})) !important;
+
+
+	.content {
+		.exacta-table-column {
+			border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+
+			.exacta-table-entry {
+				&:nth-child(odd) {
+					background-color: $COLOR__TABLE_ROW_ODD; //rgba(255, 255, 255, 0.85);
+				}
+
+				&:nth-child(even) {
+					background-color: $COLOR__TABLE_ROW_EVEN; //rgba(229, 229, 229, 0.85);
+				}
+
+				.exacta-table-odds {
+					color: $COLOR__TABLE_ROW_TEXT;
+				}
+
+				.min {
+					color: #008800;
+				}
+
+				.max {
+					color: #FF0000;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+@import "../../../components/styles/utils.scss";
+.full {
+    #header-v2 {
+      > .secondary {
+        .left {
+          .event-details {
+            //margin-right: 28px;
+          }
+        }    
+        .right {
+          //margin-left: $PAGE_ODDS_INTERNAL_BORDER_WIDTH;          
+          padding-right: vw(30px);
+        }
+      }    
+    }
+}
+
+.show-partner-logo {
+    #header-v2 {
+        > .primary {
+            @extend %flexbox;
+            padding-left: vw(35px);
+            .partner-logo  {
+              height: vh(45px);
+            }
+        }
+
+        > .secondary {
+          padding-left: vw(25px);
+        }
+    }
+}
+
+
+
+
+
+.show-tag-real #header-v2 .secondary .left .game-details .primary .channel-name {
+  margin-left: vw(12px);
+}

@@ -1,0 +1,45 @@
+.main-table-v2 {
+	width: 100%;
+	//min-height: 30%;
+	display: flex;
+	font-weight: bold;
+	//flex: 1;
+
+	.racer-wrapper {
+		width: 3.0555555555555554vh;
+		height: 3.0555555555555554vh;
+		margin-left: 2.685185185185185vh;
+		margin-right: 2.5vh;
+
+		.racer {
+			line-height: 1.9vh;
+		}
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.main-table-column-title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 633px) {
+	.main-table-column {
+		.main-table-column-title {
+			//font-size: 2.5925925925925926vh;
+		}
+
+		.content {
+			.row {
+				font-size: 2.4074074074074074vh;
+
+				&.odds {
+					font-size: 2.5925925925925926vh;
+				}
+			}
+		}
+
+	}
+}

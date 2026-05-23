@@ -1,0 +1,160 @@
+.horses, .harness{
+	.racer-wrapper {
+			width: 2.9vh;
+			height: 2.9vh;
+			align-items: center;
+	
+			.racer {
+				border-radius: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				font-size: 2.2vh;
+				line-height: 2.2vh;
+	
+				span {
+					position: absolute;
+					display: flex;
+				}
+	
+				&:before {
+					display: none !important;
+				}
+	
+				&:after {
+					display: none !important;
+				}
+			}
+	
+		}
+	
+		.racer-1 {
+			background-color: #FF0000;
+			color: #FFFFFF;
+		}
+	
+		.racer-2 {
+			background-color: #FFFFFF;
+			color: #000000;
+			border-color: #6A6A6A;
+			border-style: solid;
+			border-width: 1px;
+		}
+	
+		.racer-3 {
+			background-color: #0000ff;
+			color: #FFFFFF;
+			// border-color: #000000;
+			// border-style: solid;
+			border-width: 0px;
+		}
+	
+		.racer-4 {
+			background-color: #f7f128;
+			color: #000000;
+		}
+	
+		.racer-5 {
+			background-color: #077448;
+			color: #FFFFFF;
+		}
+	
+		.racer-6 {
+			background: initial;
+			background-color: #363132;
+			color: #FFFF00;
+			border-width: 0px;
+			text-shadow: initial;
+	
+		}
+}
+
+
+.dogs{
+.racer-wrapper {
+		width: 2.9vh;
+		height: 2.9vh;
+		align-items: center;
+
+		.racer {
+			border-radius: 0.2777777777777778vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			font-size: 2.2vh;
+			line-height: 2.2vh;
+
+			span {
+				position: absolute;
+				display: flex;
+			}
+
+			&:before {
+				display: none !important;
+			}
+
+			&:after {
+				display: none !important;
+			}
+		}
+
+	}
+
+	.racer-1 {
+		background-color: #FF0000;
+		color: #FFFFFF;
+	}
+
+	.racer-2 {
+		background-color: #0000FF;
+		color: #FFFFFF;
+	}
+
+	.racer-3 {
+		background-color: #FFFFFF;
+		color: #000000;
+		border-color: #6A6A6A;
+		border-style: solid;
+		border-width: 1px;
+	}
+
+	.racer-4 {
+		background-color: #000000;
+		color: #FFFFFF;
+	}
+
+	.racer-5 {
+		background-color: #ffbb00;
+		color: #000000;
+	}
+
+	.racer-6 {
+		background-color: #FFFFFF;
+		color: #FF0000;
+		border-color: #000000;
+		border-style: solid;
+		border-width: 1px;
+		background: linear-gradient(0, #fff 0%, #fff 8.33333%, #000 8.33333%, #000 25.0%, #fff 25.0%, #fff 41.66667%, #000 41.66667%, #000 58.33333%, #fff 58.33333%, #fff 75.0%, #000 75.0%, #000 91.66667%, #fff 91.66667%, #fff 100%);
+		text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	}
+
+
+
+	.gui-mode-dark {
+		.racer-1 {
+			background-color: hsl(0deg, 100%, 45%);
+		}
+	}
+}

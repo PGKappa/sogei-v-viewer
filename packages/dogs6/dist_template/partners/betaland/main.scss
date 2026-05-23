@@ -1,0 +1,788 @@
+@import "../../components/styles/main.scss";
+
+@import "_colors.scss";
+@import "_sizes.scss";
+@import "base64b.scss";
+
+@import "layout";
+
+#header-v2>.secondary .left .game-details{
+  margin-left: -15px !important;
+}
+
+.resultSection .dataSection .title-container {
+  background-color: #2f8b4c !important;
+  color: #fff;
+  border-color: #2f8b4c;
+}
+
+
+.full .right .latecomers-table .header .latecomers-table-title-bar{
+  color: #ffffff !important;
+}
+
+
+.full .header-countdown-v2 .progress{
+  height: 4.444444vh;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  min-width: 15.104167vw;
+  align-items: center;
+  margin-top: 7px !important;
+}
+
+.full .header-countdown-v2 .timer-container .timer-digits{
+font-size: 46px;
+margin-top: 2px !important;
+}
+
+.resultSection .dataSection .table-content .dataColumn .columnResult .dataContainerTop .racerInfoContainer .racerInfoInternal .racer-wrapper .racer{
+  font-size: 3.2vh !important;
+}
+
+
+.resultSection .dataSection .table-content .dataColumn .columnResult .dataContainerTop .racerInfoContainer .racerInfoInternal .racerMedalTopContainer .racerMedalTopText {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 94%);
+  font-size: 2.25vh !important;
+  line-height: 1.35vh !important;
+}
+.full .last-events-table .content .arrival .row .racer-container .racer-name, .full .last-events-table .content .event .row .racer-container .racer-name, .full .last-events-table .content .time .row .racer-container .racer-name{
+  font-size: 16px !important;
+}
+
+.resultSection .dataSection .table-content .dataColumn .columnMedalContainerTriple .racer-wrapper .racer{
+  font-size: 2.2vh !important;
+}
+
+
+.resultSection .dataSection .table-content .dataColumn .racerContainerDoubleS .racer-wrapper .racer{
+  font-size: 2.2vh !important;
+}
+
+
+.resultSection .racerOdds{
+  font-size: 30px !important;
+}
+.resultSection .dataSection .table-content .dataColumn .columnNormal .racerContainerDoubleX .racer-wrapper .racer{
+  font-size: 2.2vh !important
+}
+
+.replayOuterContainer .replayResultsMain .replayResultContainer .replayRacerContainer .racerData .racer-wrapper .racer{
+  font-size: 7vh !important;
+}
+.horses .racer-wrapper .racer, .harness .racer-wrapper .racer {
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 2.4vh !important;
+  line-height: 2.2vh;
+}
+.page-secondary #quinella-table-odds .quinella-table-content .quinella-table-column .quinella-table-entry .quinella-table-num-container .racer-wrapper .racer{
+  font-size: 2.4vh !important;
+}
+
+.wrapper-others .main-table-v2.main-table-odds-v2 .content .row .main-table-odds-entry .left-item{
+  font-size: 32px !important;
+}
+
+.videoSection .track-animation .track-animation-primary .racerContainer .racerActualContainer .racerActual .racer-wrapper .racer{
+  font-size: 3.2vh !important;
+}
+
+.page-secondary #boxedtrifecta-table-odds .boxedtrifecta-table-content .boxedtrifecta-table-column .boxedtrifecta-table-entry .boxedtrifecta-table-num-container .racer-wrapper .racer{
+  font-size: 2.4vh !important;
+}
+
+.page-secondary #exacta-table-odds .content .exacta-table-column .exacta-table-entry .exacta-table-num-container .racer-wrapper .racer{
+  font-size: 2.4vh !important;
+}
+
+.main-table-v2 .racer-wrapper .racer{
+  font-size: 2.2vh !important;
+}
+
+#trifecta-table-odds .trifecta-table-content .trifecta-table-column .trifecta-table-entry .trifecta-table-num-container .racer-wrapper .racer {
+  font-size: 2vh !important;
+  line-height: 1.4814814815vh;
+}
+
+.full .right .latecomers-table .latecomers-table-internal .latecomers-table-column .racer-container .racer-internal .racer-wrapper .racer{
+  font-size: 2.2vh !important;
+}
+
+.full .last-events-table .content .arrival .row .racer-container .racer-wrapper .racer, .full .last-events-table .content .event .row .racer-container .racer-wrapper .racer, .full .last-events-table .content .time .row .racer-container .racer-wrapper .racer{
+  font-size: 2vh !important;
+}
+
+.track-animation .track-animation-primary .racerContainer .racerActualContainer .racerActual .racer-wrapper .racer{
+    font-size: 2.984815vh !important;
+    font-weight: bold;
+}
+
+
+.resultSection .dataSection .table-content .dataColumn .columnResult .dataContainerTop .racerInfoContainer{
+  font-size: 24px !important;
+}
+.resultSection .bottomContainer .col.right{
+  font-size: 26px !important;
+}
+
+.resultSection .dataSection .table-content .dataColumn .columnResult .dataContainerTop .racerInfoContainer .racerName{
+  font-size: vw(24px) !important;
+}
+
+
+
+.resultSection .bottomContainer{
+  font-size: 26px !important;
+  position: relative;
+  height: 5.5vh !important;
+  line-height: 1.85vh;
+}
+
+
+#page-trifecta #header-v2>.secondary .left .event-details .pal-and-code, #page-secondary #header-v2>.secondary .left .event-details .pal-and-code, #page-main #header-v2>.secondary .left .event-details .pal-and-code{
+  font-size: 24px !important;
+}
+
+.resultSection .dataSection .table-content .dataColumn .columnResult{
+  padding-right: 15px !important;
+}
+
+.resultSection .racerName{
+  font-size: vw(24px) !important;
+}
+
+.track-animation .track-animation-secondary .oddsTitle{
+    width: 100%;
+    height: 100%;
+    font-size: 24px !important;
+    line-height: 2.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.track-animation .track-animation-secondary .textContainer .panelBottomOddsContainer .marketTitle{
+  font-size: 22px !important;
+}
+
+.track-animation .track-animation-primary .racerContainer .racerActualContainer .racerActual .racerName{
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
+    padding-bottom: 1px !important;
+}
+
+.track-animation .track-animation-primary .racerContainer .racerActualContainer .racerActual .racerTextContainer{
+    font-size: 24px !important;
+    line-height: 1.8vh;
+    font-weight: bold;
+}
+
+.track-animation .track-animation-primary .racerContainer .racerPosition{
+  font-size: 3vh !important;
+  line-height: 2.1vh;
+}
+
+.footerSection .right .next-event-countdown {
+  font-size: 32px !important;
+  line-height: 2.5925925926vh;
+}
+
+.footerSection .right .nextEvent, .footerSection .right .nextEventTime{
+  font-size: 30px !important;
+}
+
+.headSection .headTextContainer .event-starttime{
+  font-size: 32px !important;
+}
+
+.headSection .headTextContainer .current-event-desc{
+  font-size: 32px !important;
+}
+
+
+
+#header-v2 .secondary .left .event-details{
+  font-size: 32px !important;
+}
+
+.titlebar{
+  font-size: 32px !important;
+}
+.table-racers-info-column-history .row .history-row-container .result-container .np-container{
+    width: 2.8vh;
+    height: 2.8vh;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px !important;
+    line-height: 1.3vh;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.latecomers-table .latecomers-table-internal .latecomers-table-column .row-title{
+  font-size: 22px !important;
+}
+
+.full .footer.v2 .legend .min-odds .text, .full .footer.v2 .legend .max-odds .text, .footer.v2 .legend .min-odds .text, .footer.v2 .legend .max-odds .text{
+  font-size: 25px !important;
+}
+
+
+.page-secondary #boxedtrifecta-table-odds .boxedtrifecta-table-content .boxedtrifecta-table-column .boxedtrifecta-table-entry .boxedtrifecta-table-odds{
+  font-size: 32px !important;
+}
+
+.page-secondary #exacta-table-odds .content .exacta-table-column .exacta-table-entry .exacta-table-odds{
+  font-size: 32px !important;
+}
+
+
+
+.main-table-v2.table-racers-info .content .row{
+    min-height: calc(100% / 6);
+    max-height: calc(100% / 6);
+    height: calc(100% / 6);
+    flex: unset;
+    font-size: 32px;
+}
+
+.replayOuterContainer .replayResultsHeader{
+  background-color: #21793d;
+  color: #fff;
+}
+
+.header-v2 .dataSection #header-v2>.secondary{
+    padding-left: 35px !important;
+    padding-right: 15px !important;
+    padding-bottom: 6px !important;
+    background-color: #21793d;
+}
+
+
+
+.resultSection .nextEventContainer{
+  border:none !important;
+  font-size: 30px !important;
+  
+}
+
+.resultSection .dataSection .internalContainer{
+    border-color: #21793d;
+    width: 50vw !important;
+    display: flex;
+    flex-direction: column;
+    border-style: solid !important;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    border-left-width: 1px !important;
+    border-right-width: 1px !important;
+    border-top-width: 1px !important;
+    border-bottom-width: 1px !important;
+}
+
+.main-table-v2.table-racers-info .titlebar{
+    height: calc(100% / 7);
+    min-height: calc(100% / 7);
+    max-height: calc(100% / 7);
+    border:none !important;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+.latecomers-table .latecomers-table-column-titles .column-title{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6666666667vh;
+    line-height: 1.6666666667vh;
+    border:none !important;
+    border-width: 1px;
+    border-color: #dddddd;
+    font-size: 22px !important;
+}
+
+
+.latecomers-table .latecomers-table-title-bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none !important;
+    border-width: 1px;
+    border-color: #dddddd;
+    font-size: 30px !important;
+}
+
+ .last-events-table .header .secondary .titlebar{
+  color: #fff;
+  border:none !important;
+  border-width: 1px;
+  border-color: #dddddd;
+  font-size: 22px !important;
+}
+
+.full .last-events-table .header .primary{
+  background-color: #2f8b4c;
+  color: #ffffff;
+  border: none !important;
+  border-color: #dddddd;
+  border-width: thin;
+  font-size: 30px !important;
+}
+
+.last-events-table .header .secondary>div.time{
+    width: 15%;
+    width: 14.5%;
+    max-width: 14.5%;
+    min-width: 14.5%;
+    border-right-style: solid;
+    border-width: 1px;
+    border-right-color: #dddddd;
+}
+
+
+
+.resultSection .bottomContainer .col{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    border-color: #dddddd;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 0px  15px 0px 0px !important;
+}
+
+.track-animation .track-animation-secondary .textContainer{
+  background-color: #3f4440 !important;
+}
+
+.headSection .headTextContainer .event-pal-code{
+  color: #ffffff !important;
+  font-size: 24px !important;
+}
+
+.footerSection .right .nextEventCode {
+  color: #ffffff !important;
+  font-size: 22px !important;
+}
+.trasparenza{
+  //  min-width: 280px!important;
+  background-color: $SfondoLogo!important;
+  // commentare se nella prima pagina si deve vedere il logo
+    //display: none!important;
+}
+.partner-logo-header
+{
+
+  display: block!important;
+  margin: 0 auto;
+  width: 10.816667vw !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-position-x: center !important;
+  background-position-y: center !important;
+
+
+}
+
+.resultSection .results-header .partner-logo {
+
+  margin-left: 0px !important;
+}
+
+.partner-logo{
+    // commentare se sul video si deve vedere il logo
+   display: block!important;
+   opacity: 1!important;
+   margin-top:  vw(2px);
+   width: vw(260px)!important;
+    
+    height: vw(45px)!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-position-x: left !important;
+  
+}
+
+.cani-logo {
+ // commentare se sul video  si deve vedere il logo cani
+ // display:none!important;
+ margin-top: vw(22px)!important;
+ 
+  height: vw(130px)!important;
+    width: vw(130px)!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+// posizione pal nel popup dei risultati
+.Palev{
+  margin-right: vw(-152px) !important;
+  margin-top: vw(-29px) !important;
+  font-size: vw(30px)!important;
+}
+.startora{
+ 
+  margin-top: vw(-29px)!important;
+  font-size: vw(32px)!important;
+  margin-left: vw(5px)!important;
+}
+
+.cavalli-logo {
+
+  margin-top: vw(22px)!important;
+   // commentare se sul video  si deve vedere il logo cavalli
+   //display:none!important;
+  margin-top:  vw(15px);
+   height: vw(130px)!important;
+   width: vw(130px)!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+	@extend %cavalli-logo;
+}
+
+.progress {
+border-color: $COLOR__BAR_BORDER !important;
+  background-image: linear-gradient(to left, $COLOR__BAR) !important;
+}
+
+.pal2{
+  color: $Color_PAL !important;
+}
+
+.ris1,
+.ris3{
+  background-color: $RIS_1 !important;
+}
+.ris2{
+  background-color: $RIS_2 !important;
+}
+
+
+.performance-container{
+background-color: $PERF_BAR !important;
+}
+.perforce{
+  .titlebar{
+  background-color: $perforce!important;
+  }
+}
+.table-racers-info-column-history .row .history-row-container .result-container .next{
+
+  color:$PERF_BAR  !important;
+  font-size: 32px !important;
+}
+
+.latec2{
+
+  background-color: $Color_Latec2!important;
+}
+
+.latec{
+
+  background-color: $Color_Latec!important;
+}
+
+.internalContainer{
+  .titlebar{
+    color: $COLOR__BAR_BORDER_E!important;
+  }
+}
+
+.bar-item {
+    border-left: 1px solid $COLOR__BAR_BORDER!important;
+    background-color: transparent!important;
+    &.empty {
+      background-color: $COLOR__BAR_EMPTY!important;
+    }
+  }
+
+  .oddsTitle{
+    background-color: $quote_title_track !important;
+    color: $quote_title_track_font !important;
+  }
+
+
+  .track-animation .track-animation-primary .racerContainer{
+    border-color: $track_Color_SfondoNum !important;
+  }
+  .track-animation .track-animation-primary,
+  .racerPosition{
+    background-color: $track_Color_SfondoNum !important;
+  
+    color: $track_Color_FontNum !important;
+  }
+
+  .track-animation-secondary{
+
+    .marketOdds,
+    .marketTitle,
+    .bottomRacersContainer,
+  .panelBottomOddsContainer,
+  .textContainer
+  {
+    color: $COLOR_TEXT_Track!important;
+  }
+}
+
+.footerSection .left .game-name{
+  font-size: 32px !important;
+  color: $COLOR__HEADER_PRIMARY_TEXT!important;
+}
+
+
+
+// elimina il bordo nella prima schermata tra le sezioni corridore rendimento e 
+// commentare fino ad end per rimettere il bordo 
+
+  .table-racers-info .main-table-column-v2{
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+  }
+
+  .main-table-v2 .main-table-column-v2 .content {
+    border-left: solid 1px #dddddd !important;
+  }
+
+// end bordo
+
+// end bordo
+
+.full .right .latecomers-table .latecomers-table-internal .latecomers-table-column,
+.full .last-events-table .content .column, 
+.resultSection .nextEventContainer,
+.resultSection .dataSection .table-content .dataColumn:nth-child(2),
+.resultSection .dataSection .table-content .dataColumn:nth-child(1),
+.resultSection .dataSection .table-content .dataColumn .columnMedalContainerTriple .columnMedalContainerTripleInternal:nth-child(2),
+.main-table-v2 .main-table-column-v2 .content .row,
+.main-table-v2 .main-table-column-v2 .content .history-row-container .result-container,
+.main-table-v2 .main-table-column-v2:last-of-type .content,
+.exacta-table-column,
+.quinella-table-column,
+.boxedtrifecta-table-column,
+.main-table-v2 .main-table-column-v2 .content,
+.trifecta-table-column{
+  border-color: #dddddd!important;
+}
+
+  .table-racers-info .main-table-column-v2 .content  {
+    border: solid 1px #dddddd!important;
+
+}
+.main-table-v2 .main-table-column-v2 .content .history-row-container .result-container{
+  border-right: solid 1px #dddddd!important;
+  border-left: solid 1px #dddddd!important;
+}
+
+.main-table-v2 .main-table-column-v2 .content .history-row-container .result-container:nth-child(1){
+  border-left:none!important;
+}
+
+
+.replayOuterContainer{
+	background-color: rgba(221, 221, 221, 0.4)!important;
+  border-style: solid !important;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 72vh;
+  height: 24vh;
+  display: grid;
+  grid-template-rows: 5vh auto;
+  z-index: 10;
+  border-top-width: 1px !important;
+  border-bottom-width: 1px !important;
+  border-left-width: 1px !important;
+  border-right-width: 1px !important;
+  border-color: #212121;
+}
+
+.trasparenza {
+
+  padding-left: 10px!important;
+
+}
+
+#header-v2>.secondary .left .game-details .primary .game-name {
+  margin-top: -0.1vw!important;
+  font-size: 32px !important;
+}
+
+
+.cavalli-logo{
+  opacity: 1!important;
+}
+.cani-logo{
+  opacity: 1!important;
+}
+
+.footerSection .left .event-name{
+  margin-left: vw(23px)!important;
+  color: #ffffff;
+  font-size: 24px !important;
+}
+
+
+#page-trifecta,
+#page-secondary,
+#page-main {
+  #header-v2>.secondary .left .game-details .secondary .event-name {
+  margin-top: vw(2px)!important;
+  font-size: vw(24px)!important;
+  }
+
+ #header-v2>.secondary .left .event-details .pal-and-code{
+  margin-top: vw(2px)!important;
+  font-size: vw(24px)!important;
+}
+#page-video {
+    .racerName{
+      font-size: vw(32px)!important; 
+    }
+}
+.odds{
+  font-size: vw(32px)!important; 
+} 
+
+
+.racer-wrapper{
+  font-size: vw(32px)!important; 
+}
+.performance-value{
+  font-size: vw(28px)!important; 
+
+}
+}
+
+
+/*
+#trifecta-table-odds .trifecta-table-content .trifecta-table-column .trifecta-table-entry .max{
+
+  background: red!important;
+  border: solid red!important;
+  color: black!important;
+}
+  //*/
+
+  .trifecta-odds{
+    font-size: vw(28px)!important; 
+   
+  } 
+
+  #trifecta-table-odds .trifecta-table-content .trifecta-table-column .trifecta-table-entry .trifecta-odds {
+    margin-top: vw(-6px)!important; 
+}
+
+
+.exacta-table-odds {
+ // margin-top: vw(-1px)!important; 
+}
+
+  .quinella-table-odds{
+    font-size: vw(32px)!important; 
+  } 
+
+  .last-events-table .content .time .row{
+    font-size: vw(20px)!important; 
+  }
+
+  .racerOdds{
+    font-size: vw(30px)!important; 
+  }
+
+  .resultSection .dataSection .internalContainer .table-content .dataColumn .columnTitleContainer .columnTitle {
+    margin: auto auto auto 1.2625vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px !important;
+    font-size: vw(30px)!important; 
+
+}
+
+.resultSection
+{
+      .racerName{
+      font-size: vw(20px)!important; 
+    }
+}
+
+.resultSection .dataSection .table-content .dataColumn .dataContainerText1{
+  font-size: vw(30px)!important; 
+}
+
+.replayOuterContainer .replayResultsMain .replayResultContainer .replayRacerContainer .racerData .racerName {
+
+  font-size: vw(32px)!important; 
+ 
+}
+
+.replayOuterContainer .replayResultsMain .replayResultContainer .replayRacerContainer .racerData  {
+  
+  margin-top:  vw(10px)!important;
+ 
+}
+
+.resultSection .bottomContainer .col.center span {
+  font-size: vw(26px)!important; 
+  padding-left: 15px !important;
+  line-height: 24px !important;
+}
+
+
+.event-name{
+  text-transform: uppercase!important;
+}
+
+#header-v2 {
+	background-color: $COLOR__HEADER_PRIMARY;
+	color: $COLOR__HEADER_PRIMARY_TEXT;
+	flex-direction: row !important;
+	height: $SIZE__THEME__HEADER_HEIGHT !important;
+
+	>.primary {
+		width: 14.5% !important;
+		//padding-left: 3vh !important;
+		height: 100% !important;		
+
+		.partner-logo {
+			height: $SIZE__THEME__HEADER__PARTNER_LOGO_HEIGHT;
+			margin-left: 0px !important;
+		}
+	}
+}
+
+
+
+

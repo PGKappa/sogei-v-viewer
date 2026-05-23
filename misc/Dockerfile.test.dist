@@ -1,0 +1,4 @@
+FROM cypress/browsers:node16.13.2-chrome97-ff96
+RUN apt-get -y install yarn
+RUN yarn global add cypress
+RUN cypress install

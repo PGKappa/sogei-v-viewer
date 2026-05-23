@@ -1,0 +1,124 @@
+{
+    "ret_code": 1024,
+    "description": "Success",
+    "cmd": "viewer_init",
+    "next_event": {
+        "int_pal_id": "1000001691",
+        "int_event_id": "169"
+    },
+    "game_statics": {
+        "channel_id": 1,
+        "channel_name": "CH1",
+        "channel_track_name": "6 RUNNERS TRACK",
+        "game_id": 1,
+        "game_name": "dogs",
+        "game_racers": 6,
+        "game_total_duration": 240,
+        "page_main_duration": 20,
+        "page_trifecta_duration": 10,
+        "page_results_duration": 10,
+        "dict": {
+            "main_header": {
+                "full_game_name": "DOG RACING",
+                "game_name": "DOG RACING",
+                "tag_real": null,
+                "channel_desc": "CH",
+                "next_race_desc": "NEXT EVENT",
+                "next_race_time_desc": "TIME",
+                "next_race_pal_desc": "PAL.",
+                "next_race_code_desc": "COD."
+            },
+            "main_footer": {
+                "legend_min_odds": "MIN ODDS",
+                "legend_max_odds": "MAX ODDS",
+                "sliding_text": "|||                                                                         V I R T U A L     G A M E S                                                                         |||                                                                         V I R T U A L     G A M E S                                                                         "
+            },
+            "page_odds": {
+                "racer_header": "RUNNER",
+                "history_header": "HISTORY",
+                "history_position_texts": ["NP", "1st", "2nd", "3rd"],
+                "performance_header": "PERFORMANCE",
+                "winner_header": "WINNER",
+                "placed_header": "PLACED",
+                "show_header": "SHOW",
+                "exacta_header": "EXACTA",
+                "quinella_header": "QUINELLA",
+                "evenodd_header": "EVEN \/ ODD",
+                "underover_header": "UNDER \/ OVER 3.5",
+                "others_header": "OTHER MARKETS",
+                "others_under": "UNDER",
+                "others_over": "OVER",
+                "others_even": "EVEN",
+                "others_odd": "ODD",
+                "trifecta_header": "TRIFECTA",
+                "boxedtrifecta_header": "BOX TRIFECTA"
+            },
+            "panel_last_events": {
+                "header": "LAST RESULTS",
+                "time_header": "TIME",
+                "pal_header": "PAL.",
+                "code_header": "COD.",
+                "event_header": "PAL. - COD.",
+                "arrival_header": "ARRIVAL ORDER 1st 2nd 3rd"
+            },
+            "panel_latecomers": {
+                "header": "LATECOMERS",
+                "market_header": "MARKET",
+                "result_header": "RESULT",
+                "delay_header": "RACES NO.",
+                "winner_desc": "WINNER",
+                "exacta_desc": "EXACTA",
+                "trifecta_desc": "TRIFECTA"
+            },
+            "page_video": {
+                "time_desc": "TIME",
+                "pal_desc": "PAL.",
+                "code_desc": "COD.",
+                "race_desc": "EVENT IN PROGRESS",
+                "next_race_desc": "NEXT EVENT",
+                "track": {
+                    "position_texts": ["1°", "2°", "3°", "4°", "5°", "6°"],
+                    "live_odds": "LIVE ODDS",
+                    "arrival_panel": {
+                        "header": "ARRIVAL ORDER"
+                    },
+                    "markets": {
+                        "trifecta": "TRIFECTA",
+                        "exacta": "EXACTA",
+                        "quinella": "QUINELLA",
+                        "boxedtrifecta": "BOX TRIFECTA",
+                        "under": "UNDER",
+                        "over": "OVER",
+                        "even": "EVEN",
+                        "odd": "ODD"
+                    }
+                }
+            },
+            "page_results": {
+                "header": "RESULTS",
+                "cockade_texts": ["1st", "2nd", "3rd"],
+                "arrival_desc": "ARRIVAL ORDER",
+                "winner_desc": "WINNER",
+                "placed_desc": "PLACED",
+                "show_desc": "SHOW",
+                "exacta_desc": "EXACTA",
+                "quinella_desc": "QUINELLA",
+                "trifecta_desc": "TRIFECTA",
+                "boxedtrifecta_desc": "BOX TRIFECTA",
+                "evenodd_desc": "EVEN \/ ODD",
+                "evenodd_even": "EVEN",
+                "evenodd_odd": "ODD",
+                "underover_desc": "UNDER \/ OVER 3.5",
+                "underover_under": "UNDER",
+                "underover_over": "OVER",
+                "next_race_header": "NEXT EVENT",
+                "next_race_time_desc": "TIME",
+                "next_race_code_desc": "COD."
+            },
+            "alerts": {
+                "internet_disconnected_error": "DISCONNECTED -"
+            }
+        },
+        "multiplier_enabled": false
+    }
+}

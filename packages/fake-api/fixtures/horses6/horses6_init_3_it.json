@@ -1,0 +1,124 @@
+{
+    "ret_code": 1024,
+    "description": "Success",
+    "cmd": "viewer_init",
+    "next_event": {
+        "int_pal_id": "3000001701",
+        "int_event_id": "151"
+    },
+    "game_statics": {
+        "channel_id": 3,
+        "channel_name": "CH3",
+        "channel_track_name": "CIRCUITO A 6",
+        "game_id": 2,
+        "game_name": "horses",
+        "game_racers": 6,
+        "game_total_duration": 240,
+        "page_main_duration": 20,
+        "page_trifecta_duration": 10.5,
+        "page_results_duration": 10,
+        "dict": {
+            "main_header": {
+                "full_game_name": "CAVALLI AL GALOPPO",
+                "game_name": "CAVALLI AL GALOPPO",
+                "tag_real": "REALI",
+                "channel_desc": "CH",
+                "next_race_desc": "PROSSIMO EVENTO",
+                "next_race_time_desc": "ORA",
+                "next_race_pal_desc": "PAL.",
+                "next_race_code_desc": "AVV."
+            },
+            "main_footer": {
+                "legend_min_odds": "QUOTA MINIMA",
+                "legend_max_odds": "QUOTA MASSIMA",
+                "sliding_text": "|||                                                                         V I R T U A L     G A M E S                                                                         |||                                                                         V I R T U A L     G A M E S                                                                         "
+            },
+            "page_odds": {
+                "racer_header": "CORRIDORE",
+                "history_header": "STORICO",
+                "history_position_texts": ["NP", "1°", "2°", "3°"],
+                "performance_header": "RENDIMENTO",
+                "winner_header": "VINCENTE",
+                "placed_header": "PIAZZATO 1° 2°",
+                "show_header": "PIAZZATO 1° 2° 3°",
+                "exacta_header": "ACCOPPIATA IN ORDINE",
+                "quinella_header": "ACCOPPIATA A GIRARE",
+                "evenodd_header": "PARI \/ DISPARI",
+                "underover_header": "UNDER \/ OVER 3.5",
+                "others_header": "ALTRI MERCATI",
+                "others_under": "UNDER",
+                "others_over": "OVER",
+                "others_even": "PARI",
+                "others_odd": "DISPARI",
+                "trifecta_header": "TRIO IN ORDINE",
+                "boxedtrifecta_header": "TRIO A GIRARE"
+            },
+            "panel_last_events": {
+                "header": "ULTIMI RISULTATI",
+                "time_header": "ORA",
+                "pal_header": "PAL.",
+                "code_header": "AVV.",
+                "event_header": "PAL. - AVV.",
+                "arrival_header": "ORDINE DI ARRIVO 1° 2° 3°"
+            },
+            "panel_latecomers": {
+                "header": "RITARDATARI",
+                "market_header": "MERCATO",
+                "result_header": "RISULTATO",
+                "delay_header": "N. CORSE",
+                "winner_desc": "VINCENTE",
+                "exacta_desc": "ACC. IN ORD.",
+                "trifecta_desc": "TRIO IN ORD."
+            },
+            "page_video": {
+                "time_desc": "ORA",
+                "pal_desc": "PAL.",
+                "code_desc": "AVV.",
+                "race_desc": "EVENTO IN CORSO",
+                "next_race_desc": "PROSSIMO EVENTO",
+                "track": {
+                    "position_texts": ["1°", "2°", "3°", "4°", "5°", "6°"],
+                    "live_odds": "QUOTE LIVE",
+                    "arrival_panel": {
+                        "header": "ORDINE DI ARRIVO"
+                    },
+                    "markets": {
+                        "trifecta": "TRIO IN ORD.",
+                        "exacta": "ACC. IN ORD.",
+                        "quinella": "ACC. A GIRARE",
+                        "boxedtrifecta": "TRIO A GIRARE",
+                        "under": "UNDER",
+                        "over": "OVER",
+                        "even": "PARI",
+                        "odd": "DISPARI"
+                    }
+                }
+            },
+            "page_results": {
+                "header": "RISULTATI",
+                "cockade_texts": ["1°", "2°", "3°"],
+                "arrival_desc": "ORDINE DI ARRIVO",
+                "winner_desc": "VINCENTE",
+                "placed_desc": "PIAZZATO 1° 2°",
+                "show_desc": "PIAZZATO 1° 2° 3°",
+                "exacta_desc": "ACCOPPIATA IN ORDINE",
+                "quinella_desc": "ACCOPPIATA A GIRARE",
+                "trifecta_desc": "TRIO IN ORDINE",
+                "boxedtrifecta_desc": "TRIO A GIRARE",
+                "evenodd_desc": "PARI \/ DISPARI",
+                "evenodd_even": "PARI",
+                "evenodd_odd": "DISPARI",
+                "underover_desc": "UNDER \/ OVER 3.5",
+                "underover_under": "UNDER",
+                "underover_over": "OVER",
+                "next_race_header": "PROSSIMO EVENTO",
+                "next_race_time_desc": "ORA",
+                "next_race_code_desc": "AVV."
+            },
+            "alerts": {
+                "internet_disconnected_error": "CONNESSIONE ASSENTE -"
+            }
+        },
+        "multiplier_enabled": false
+    }
+}
