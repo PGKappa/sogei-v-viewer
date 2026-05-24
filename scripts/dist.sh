@@ -60,7 +60,7 @@ echo "Num. enabled games: $n_enabled_games"
 echo "Num. builds succeded: $num_succeeded"
 
 if [ $num_succeeded -gt 0 -a $n_enabled_games -eq $num_succeeded ]; then
-    V_VIEWER_API_URL=http://10.200.1.87:8080/api/v-viewer
+    V_VIEWER_API_URL=http://192.168.10.116:8083/api/v-viewer
     cp misc/redirect-index-template.html.txt dist/v-viewer/index.html
     sed -i -e "s,\${V_VIEWER_API_URL},$V_VIEWER_API_URL," dist/v-viewer/index.html
 

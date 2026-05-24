@@ -3,7 +3,7 @@ FROM  node:18-alpine3.15 AS buildviewer
 ENV IS_ENABLED_DOGS6=true
 ENV V_VIEWER_DOGS6_PARTNER  'stanleybet'
 ENV V_VIEWER_DOGS6_INDEX_TITLE '"PGVirtual V-Viewer"'
-ENV V_VIEWER_DOGS6_API_ENDPOINT \'http://10.200.1.87:8080/api\'
+ENV V_VIEWER_DOGS6_API_ENDPOINT \'http://192.168.10.116:8083/api\'
 #ENV V_VIEWER_DOGS6_API_ENDPOINT=(function(){return document.location.protocol + "//" + document.location.hostname + ":9900/dogs6"}())
 ENV V_VIEWER_DOGS6_JS_ENTRYPOINT=v-viewer-dogs6.min.js
 ENV V_VIEWER_DOGS6_VARS var v_param__show_partner_logo = 1, \
