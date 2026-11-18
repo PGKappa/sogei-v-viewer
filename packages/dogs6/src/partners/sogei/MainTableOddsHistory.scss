@@ -1,0 +1,18 @@
+.history {
+	.history-row-container {
+		.result-container {
+			&:nth-child(even) {
+				border-color: $COLOR__TABLE_COLUMN_INTERNAL_BORDER;
+			}
+
+			.np-container {
+				color: $COLOR__TABLE_ROW_TEXT;
+				border-color: $COLOR__TABLE_ROW_TEXT;
+			}
+
+			.cockade-text {
+				color: $COLOR__TABLE_ROW_TEXT;
+			}
+		}
+	}
+}

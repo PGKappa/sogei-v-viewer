@@ -12,7 +12,7 @@ services:
       - GAME_ID=${GAME_ID}
       - V_VIEWER_INDEX_TEMPLATE=index.template.demo.js
       #- V_VIEWER_${GAME_ID}_PARTNER=pg
-      - V_VIEWER_${GAME_ID}_PARTNER=stanleybet
+      - V_VIEWER_${GAME_ID}_PARTNER=sogei
       #
       #
       # The V_VIEWER_${GAME_ID}_API_ENDPOINT must be a
@@ -20,7 +20,7 @@ services:
       #
       #- V_VIEWER_${GAME_ID}_API_ENDPOINT=(function(){return document.location.protocol + "//" + document.location.hostname + ":9900/${game_id}"}())
       #- V_VIEWER_${GAME_ID}_API_ENDPOINT="https://api-isibet.pgvirtual.eu/api"
-      - V_VIEWER_${GAME_ID}_API_ENDPOINT="http://192.168.10.116:8080/api"
+      - V_VIEWER_${GAME_ID}_API_ENDPOINT="http://192.168.10.116:8083/api"
 
       #- V_VIEWER_${GAME_ID}_API_ENDPOINT="http://localhost:3000"
 
@@ -29,7 +29,7 @@ services:
         v_param__full=1,
         v_param__audio=1,
         v_param__gui_layout_version='v2',
-        v_param__operator='stanleybet',
+        v_param__operator='sogei',
         v_param__hide_channel=0,
         v_param_pal_start='07:56',
         v_param_pal_end='08:00';
