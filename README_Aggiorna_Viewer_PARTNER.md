@@ -17,3 +17,5 @@
 
 
     --------------------------------- FINE ---------------------------------
+
+    http://192.168.10.116:8093/dogs6/?operator=pg&controller_id=84012&monitor=1&init_code=viewer-net4media-dogs6&audio=1&type_mode=web
