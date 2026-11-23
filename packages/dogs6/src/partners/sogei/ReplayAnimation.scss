@@ -1,0 +1,16 @@
+.replayOuterContainer {
+	//.replayResultsContainer {
+		border-color: $COLOR__PAGE_RESULTS_TABLE_BORDER;
+		background-color: $COLOR__TABLE_ROW_ODD;
+		color: $COLOR__TABLE_ROW_TEXT;
+
+		.replayResultsHeader {
+			background-color: $COLOR__PAGE_RESULTS_TABLE_HEADER_EVEN;
+			color: $COLOR__TABLE_HEADER_TEXT;
+		}
+
+		.medaltext {
+			color: black;
+		}
+//	}
+}

@@ -1,5 +1,5 @@
 import './components/styles/main.scss';
-import "./partners/stanleybet/main.scss";
+import "./partners/sogei/main.scss";
 
 import {params, config, init, storage} from '@v-viewer/core';
 

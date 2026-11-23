@@ -1,0 +1,26 @@
+
+.gui-mode-dark {
+	#boxedtrifecta-table-odds {
+		border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+	
+		.boxedtrifecta-table-content {
+			.boxedtrifecta-table-column {
+				border-color: $COLOR__DARK__TABLE_COLUMN_INTERNAL_BORDER;
+	
+				.boxedtrifecta-table-entry {
+					&:nth-child(odd) {
+						background-color: $COLOR__DARK__TABLE_ROW_ODD;
+					}
+	
+					&:nth-child(even) {
+						background-color: $COLOR__DARK__TABLE_ROW_EVEN; 
+					}
+	
+					.boxedtrifecta-table-odds {
+						color: $COLOR__DARK__TABLE_ROW_TEXT;
+					}
+				}
+			}
+		}
+	}
+}
